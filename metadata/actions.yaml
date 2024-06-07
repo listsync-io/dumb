@@ -1,0 +1,1799 @@
+actions: []
+custom_types:
+  enums:
+    - name: MyMutationAmazonProductConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_id_key
+        - description: unique or primary key constraint on columns "product_id"
+          is_deprecated: null
+          value: amazon_product_product_id_primary
+        - description: unique or primary key constraint on columns "seller_sku"
+          is_deprecated: null
+          value: amazon_product_seller_sku_unique
+    - name: MyMutationAmazonProductUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: asin
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: fulfillment_channel
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: item_condition
+        - description: column name
+          is_deprecated: null
+          value: item_description
+        - description: column name
+          is_deprecated: null
+          value: item_name
+        - description: column name
+          is_deprecated: null
+          value: listing_id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: open_date
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: seller_sku
+        - description: column name
+          is_deprecated: null
+          value: source_report_id
+        - description: column name
+          is_deprecated: null
+          value: status
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationAmazonProductBrandSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: name
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductDescriptionSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: content
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductFeatureSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: content
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductIdentifierSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: EAN
+        - description: column name
+          is_deprecated: null
+          value: UPC
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductImageSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: height
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: url
+        - description: column name
+          is_deprecated: null
+          value: variant
+        - description: column name
+          is_deprecated: null
+          value: width
+    - name: MyMutationAmazonProductItemDimensionSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: height
+        - description: column name
+          is_deprecated: null
+          value: height_unit
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: length
+        - description: column name
+          is_deprecated: null
+          value: length_unit
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: weight
+        - description: column name
+          is_deprecated: null
+          value: weight_unit
+        - description: column name
+          is_deprecated: null
+          value: width
+        - description: column name
+          is_deprecated: null
+          value: width_unit
+    - name: MyMutationAmazonProductKeywordSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: name
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductManufacturerSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: name
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductPackageDimensionSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: height
+        - description: column name
+          is_deprecated: null
+          value: height_unit
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: length
+        - description: column name
+          is_deprecated: null
+          value: length_unit
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: weight
+        - description: column name
+          is_deprecated: null
+          value: weight_unit
+        - description: column name
+          is_deprecated: null
+          value: width
+        - description: column name
+          is_deprecated: null
+          value: width_unit
+    - name: MyMutationAmazonProductSummarySelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: item_classification
+        - description: column name
+          is_deprecated: null
+          value: item_name
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: model_number
+        - description: column name
+          is_deprecated: null
+          value: package_quantity
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: size
+        - description: column name
+          is_deprecated: null
+          value: style
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: website_display_group
+        - description: column name
+          is_deprecated: null
+          value: website_display_group_name
+    - name: MyMutationAmazonProductTypeSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: name
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: asin
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: fulfillment_channel
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: item_condition
+        - description: column name
+          is_deprecated: null
+          value: item_description
+        - description: column name
+          is_deprecated: null
+          value: item_name
+        - description: column name
+          is_deprecated: null
+          value: listing_id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: open_date
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: seller_sku
+        - description: column name
+          is_deprecated: null
+          value: source_report_id
+        - description: column name
+          is_deprecated: null
+          value: status
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationAmazonReportHistorySelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: notification_id
+        - description: column name
+          is_deprecated: null
+          value: report_document_id
+        - description: column name
+          is_deprecated: null
+          value: report_id
+        - description: column name
+          is_deprecated: null
+          value: report_type
+        - description: column name
+          is_deprecated: null
+          value: selling_partner_id
+        - description: column name
+          is_deprecated: null
+          value: subscription_id
+        - description: column name
+          is_deprecated: null
+          value: task_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: url
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationEbayInventoryOfferSelectColumnEbayInventoryOfferAggregateBoolExpBoolAndArgumentsColumns
+      values:
+        - description: column name
+          is_deprecated: null
+          value: published
+    - name: MyMutationEbayInventoryOfferSelectColumnEbayInventoryOfferAggregateBoolExpBoolOrArgumentsColumns
+      values:
+        - description: column name
+          is_deprecated: null
+          value: published
+    - name: MyMutationEbayInventoryOfferSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: amazon_product_id
+        - description: column name
+          is_deprecated: null
+          value: available_quantity
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: format
+        - description: column name
+          is_deprecated: null
+          value: fulfillment_policy_id
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: inventory_item_id
+        - description: column name
+          is_deprecated: null
+          value: listing_description
+        - description: column name
+          is_deprecated: null
+          value: merchant_location_key
+        - description: column name
+          is_deprecated: null
+          value: offer_id
+        - description: column name
+          is_deprecated: null
+          value: payment_policy_id
+        - description: column name
+          is_deprecated: null
+          value: primary_category_id
+        - description: column name
+          is_deprecated: null
+          value: published
+        - description: column name
+          is_deprecated: null
+          value: quantity_limit_per_buyer
+        - description: column name
+          is_deprecated: null
+          value: return_policy_id
+        - description: column name
+          is_deprecated: null
+          value: sku
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationEbayInventoryItemSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: amazon_product_id
+        - description: column name
+          is_deprecated: null
+          value: condition
+        - description: column name
+          is_deprecated: null
+          value: condition_description
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: description
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: quantity
+        - description: column name
+          is_deprecated: null
+          value: sku
+        - description: column name
+          is_deprecated: null
+          value: title
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationShopifyProductVariantSelectColumnShopifyProductVariantAggregateBoolExpBoolAndArgumentsColumns
+      values:
+        - description: column name
+          is_deprecated: null
+          value: taxable
+    - name: MyMutationShopifyProductVariantSelectColumnShopifyProductVariantAggregateBoolExpBoolOrArgumentsColumns
+      values:
+        - description: column name
+          is_deprecated: null
+          value: taxable
+    - name: MyMutationShopifyProductVariantSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: barcode
+        - description: column name
+          is_deprecated: null
+          value: compare_at_price
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: fulfillment_service
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: inventory_management
+        - description: column name
+          is_deprecated: null
+          value: inventory_policy
+        - description: column name
+          is_deprecated: null
+          value: position
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: shopify_listing_variant_id
+        - description: column name
+          is_deprecated: null
+          value: sku
+        - description: column name
+          is_deprecated: null
+          value: taxable
+        - description: column name
+          is_deprecated: null
+          value: title
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: variant_id
+    - name: MyMutationShopifyProductSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: amazon_product_id
+        - description: column name
+          is_deprecated: null
+          value: body_html
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: handle
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: product_type
+        - description: column name
+          is_deprecated: null
+          value: published_at
+        - description: column name
+          is_deprecated: null
+          value: published_scope
+        - description: column name
+          is_deprecated: null
+          value: shopify_listing_id
+        - description: column name
+          is_deprecated: null
+          value: title
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+        - description: column name
+          is_deprecated: null
+          value: vendor
+    - name: MyMutationEbayProductFeeSelectColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: amazon_product_id
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: listing_fee
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductBrandConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_brand_id_primary
+    - name: MyMutationAmazonProductBrandUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: name
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductDescriptionConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_description_id_primary
+    - name: MyMutationAmazonProductDescriptionUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: content
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductFeatureConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_feature_id_primary
+    - name: MyMutationAmazonProductFeatureUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: content
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductIdentifierConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_identifier_id_primary
+    - name: MyMutationAmazonProductIdentifierUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: EAN
+        - description: column name
+          is_deprecated: null
+          value: UPC
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductImageConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_image_id_primary
+    - name: MyMutationAmazonProductImageUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: height
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: url
+        - description: column name
+          is_deprecated: null
+          value: variant
+        - description: column name
+          is_deprecated: null
+          value: width
+    - name: MyMutationAmazonProductItemDimensionConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_item_dimension_id_primary
+    - name: MyMutationAmazonProductItemDimensionUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: height
+        - description: column name
+          is_deprecated: null
+          value: height_unit
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: length
+        - description: column name
+          is_deprecated: null
+          value: length_unit
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: weight
+        - description: column name
+          is_deprecated: null
+          value: weight_unit
+        - description: column name
+          is_deprecated: null
+          value: width
+        - description: column name
+          is_deprecated: null
+          value: width_unit
+    - name: MyMutationAmazonProductKeywordConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_keyword_id_primary
+    - name: MyMutationAmazonProductKeywordUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: name
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductManufacturerConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_manufacturer_id_primary
+    - name: MyMutationAmazonProductManufacturerUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: name
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductPackageDimensionConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_package_dimension_id_primary
+    - name: MyMutationAmazonProductPackageDimensionUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: height
+        - description: column name
+          is_deprecated: null
+          value: height_unit
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: length
+        - description: column name
+          is_deprecated: null
+          value: length_unit
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: weight
+        - description: column name
+          is_deprecated: null
+          value: weight_unit
+        - description: column name
+          is_deprecated: null
+          value: width
+        - description: column name
+          is_deprecated: null
+          value: width_unit
+    - name: MyMutationAmazonProductPriceHistoryConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_price_history_id_key
+        - description: unique or primary key constraint on columns "product_id"
+          is_deprecated: null
+          value: amazon_product_price_history_product_id_primary
+    - name: MyMutationAmazonProductPriceHistoryUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: price_change
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductQuantityHistoryConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_quantity_history_id_key
+        - description: unique or primary key constraint on columns "product_id"
+          is_deprecated: null
+          value: amazon_product_quantity_history_product_id_primary
+    - name: MyMutationAmazonProductQuantityHistoryUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: quantity_change
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonProductSummaryConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_summary_id_primary
+    - name: MyMutationAmazonProductSummaryUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: item_classification
+        - description: column name
+          is_deprecated: null
+          value: item_name
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: model_number
+        - description: column name
+          is_deprecated: null
+          value: package_quantity
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: size
+        - description: column name
+          is_deprecated: null
+          value: style
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: website_display_group
+        - description: column name
+          is_deprecated: null
+          value: website_display_group_name
+    - name: MyMutationAmazonProductTypeConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_product_type_id_primary
+    - name: MyMutationAmazonProductTypeUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: marketplace_id
+        - description: column name
+          is_deprecated: null
+          value: name
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+    - name: MyMutationAmazonReportHistoryConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: amazon_report_history_id_key
+        - description: unique or primary key constraint on columns "report_id"
+          is_deprecated: null
+          value: amazon_report_history_report_id_unique
+    - name: MyMutationAmazonReportHistoryUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: notification_id
+        - description: column name
+          is_deprecated: null
+          value: report_document_id
+        - description: column name
+          is_deprecated: null
+          value: report_id
+        - description: column name
+          is_deprecated: null
+          value: report_type
+        - description: column name
+          is_deprecated: null
+          value: selling_partner_id
+        - description: column name
+          is_deprecated: null
+          value: subscription_id
+        - description: column name
+          is_deprecated: null
+          value: task_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: url
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationEbayInventoryItemConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: ebay_inventory_item_id_key
+    - name: MyMutationEbayInventoryItemUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: amazon_product_id
+        - description: column name
+          is_deprecated: null
+          value: condition
+        - description: column name
+          is_deprecated: null
+          value: condition_description
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: description
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: quantity
+        - description: column name
+          is_deprecated: null
+          value: sku
+        - description: column name
+          is_deprecated: null
+          value: title
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationEbayInventoryOfferConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: ebay_inventory_offer_id_key
+    - name: MyMutationEbayInventoryOfferUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: amazon_product_id
+        - description: column name
+          is_deprecated: null
+          value: available_quantity
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: format
+        - description: column name
+          is_deprecated: null
+          value: fulfillment_policy_id
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: inventory_item_id
+        - description: column name
+          is_deprecated: null
+          value: listing_description
+        - description: column name
+          is_deprecated: null
+          value: merchant_location_key
+        - description: column name
+          is_deprecated: null
+          value: offer_id
+        - description: column name
+          is_deprecated: null
+          value: payment_policy_id
+        - description: column name
+          is_deprecated: null
+          value: primary_category_id
+        - description: column name
+          is_deprecated: null
+          value: published
+        - description: column name
+          is_deprecated: null
+          value: quantity_limit_per_buyer
+        - description: column name
+          is_deprecated: null
+          value: return_policy_id
+        - description: column name
+          is_deprecated: null
+          value: sku
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationShopifyProductConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: shopify_product_id_key
+        - description: unique or primary key constraint on columns "product_id"
+          is_deprecated: null
+          value: shopify_product_product_id_primary
+        - description: unique or primary key constraint on columns "shopify_listing_id"
+          is_deprecated: null
+          value: shopify_product_shopify_listing_id_unique
+    - name: MyMutationShopifyProductUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: amazon_product_id
+        - description: column name
+          is_deprecated: null
+          value: body_html
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: handle
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: product_type
+        - description: column name
+          is_deprecated: null
+          value: published_at
+        - description: column name
+          is_deprecated: null
+          value: published_scope
+        - description: column name
+          is_deprecated: null
+          value: shopify_listing_id
+        - description: column name
+          is_deprecated: null
+          value: title
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+        - description: column name
+          is_deprecated: null
+          value: vendor
+    - name: MyMutationShopifyProductVariantConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: shopify_product_variant_id_key
+        - description: unique or primary key constraint on columns "variant_id", "product_id"
+          is_deprecated: null
+          value: shopify_product_variant_product_id_variant_id_primary
+    - name: MyMutationShopifyProductVariantUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: barcode
+        - description: column name
+          is_deprecated: null
+          value: compare_at_price
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: fulfillment_service
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: inventory_management
+        - description: column name
+          is_deprecated: null
+          value: inventory_policy
+        - description: column name
+          is_deprecated: null
+          value: position
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: shopify_listing_variant_id
+        - description: column name
+          is_deprecated: null
+          value: sku
+        - description: column name
+          is_deprecated: null
+          value: taxable
+        - description: column name
+          is_deprecated: null
+          value: title
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: variant_id
+    - name: MyMutationShopifyProductVariantPriceHistoryConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: shopify_product_variant_price_history_id_key
+        - description: unique or primary key constraint on columns "variant_id", "product_id"
+          is_deprecated: null
+          value: shopify_product_variant_price_history_product_id_variant_id_pri
+    - name: MyMutationShopifyProductVariantPriceHistoryUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: price_change
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: variant_id
+    - name: MyMutationShopifyProductVariantQuantityHistoryConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: shopify_product_variant_quantity_history_id_key
+        - description: unique or primary key constraint on columns "variant_id", "product_id"
+          is_deprecated: null
+          value: shopify_product_variant_quantity_history_product_id_variant_id_
+    - name: MyMutationShopifyProductVariantQuantityHistoryUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: product_id
+        - description: column name
+          is_deprecated: null
+          value: quantity_change
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: variant_id
+    - name: MyMutationUserEbayAssociationConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: user_ebay_association_id_key
+        - description: unique or primary key constraint on columns "user_id"
+          is_deprecated: null
+          value: user_ebay_association_user_id_primary
+    - name: MyMutationUserEbayAssociationUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: access_token
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationUserShopifyAssociationConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: user_shopify_association_id_key
+        - description: unique or primary key constraint on columns "user_id"
+          is_deprecated: null
+          value: user_shopify_association_user_id_primary
+    - name: MyMutationUserShopifyAssociationUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: access_token
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: domain
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationUserConstraint
+      values:
+        - description: unique or primary key constraint on columns "email"
+          is_deprecated: null
+          value: user_email_unique
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: user_id_key
+        - description: unique or primary key constraint on columns "provider", "sub"
+          is_deprecated: null
+          value: user_provider_sub_primary
+        - description: unique or primary key constraint on columns "user_id"
+          is_deprecated: null
+          value: user_user_id_unique
+    - name: MyMutationUserUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: data
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: email
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: provider
+        - description: column name
+          is_deprecated: null
+          value: sub
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationUserAmazonAssociationConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: user_amazon_association_id_key
+        - description: unique or primary key constraint on columns "user_id", "selling_partner_id"
+          is_deprecated: null
+          value: user_amazon_association_user_id_selling_partner_id_primary
+    - name: MyMutationUserAmazonAssociationUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: access_token
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: deleted_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: refresh_token
+        - description: column name
+          is_deprecated: null
+          value: selling_partner_id
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+        - description: column name
+          is_deprecated: null
+          value: user_id
+    - name: MyMutationEbayProductFeeConstraint
+      values:
+        - description: unique or primary key constraint on columns "id"
+          is_deprecated: null
+          value: ebay_product_fee_id_primary
+    - name: MyMutationEbayProductFeeUpdateColumn
+      values:
+        - description: column name
+          is_deprecated: null
+          value: amazon_product_id
+        - description: column name
+          is_deprecated: null
+          value: created_at
+        - description: column name
+          is_deprecated: null
+          value: id
+        - description: column name
+          is_deprecated: null
+          value: listing_fee
+        - description: column name
+          is_deprecated: null
+          value: updated_at
+  input_objects:
+    - name: MyMutationAmazonProductInsertInput
+    - name: MyMutationAmazonProductBrandArrRelInsertInput
+    - name: MyMutationAmazonProductBrandInsertInput
+    - name: MyMutationAmazonProductObjRelInsertInput
+    - name: MyMutationAmazonProductOnConflict
+    - name: MyMutationAmazonProductBoolExp
+    - name: MyMutationAmazonProductBrandBoolExp
+    - name: MyMutationTimestamptzComparisonExp
+    - name: MyMutationIntComparisonExp
+    - name: MyMutationStringComparisonExp
+    - name: MyMutationAmazonProductBrandAggregateBoolExp
+    - name: MyMutationAmazonProductBrandAggregateBoolExpCount
+    - name: MyMutationAmazonProductDescriptionBoolExp
+    - name: MyMutationAmazonProductDescriptionAggregateBoolExp
+    - name: MyMutationAmazonProductDescriptionAggregateBoolExpCount
+    - name: MyMutationAmazonProductFeatureBoolExp
+    - name: MyMutationAmazonProductFeatureAggregateBoolExp
+    - name: MyMutationAmazonProductFeatureAggregateBoolExpCount
+    - name: MyMutationAmazonProductIdentifierBoolExp
+    - name: MyMutationAmazonProductIdentifierAggregateBoolExp
+    - name: MyMutationAmazonProductIdentifierAggregateBoolExpCount
+    - name: MyMutationAmazonProductImageBoolExp
+    - name: MyMutationAmazonProductImageAggregateBoolExp
+    - name: MyMutationAmazonProductImageAggregateBoolExpCount
+    - name: MyMutationAmazonProductItemDimensionBoolExp
+    - name: MyMutationAmazonProductItemDimensionAggregateBoolExp
+    - name: MyMutationAmazonProductItemDimensionAggregateBoolExpCount
+    - name: MyMutationAmazonProductKeywordBoolExp
+    - name: MyMutationAmazonProductKeywordAggregateBoolExp
+    - name: MyMutationAmazonProductKeywordAggregateBoolExpCount
+    - name: MyMutationAmazonProductManufacturerBoolExp
+    - name: MyMutationAmazonProductManufacturerAggregateBoolExp
+    - name: MyMutationAmazonProductManufacturerAggregateBoolExpCount
+    - name: MyMutationAmazonProductPackageDimensionBoolExp
+    - name: MyMutationAmazonProductPackageDimensionAggregateBoolExp
+    - name: MyMutationAmazonProductPackageDimensionAggregateBoolExpCount
+    - name: MyMutationAmazonProductPriceBoolExp
+    - name: MyMutationAmazonProductPriceHistoryBoolExp
+    - name: MyMutationAmazonProductQuantityBoolExp
+    - name: MyMutationBigintComparisonExp
+    - name: MyMutationAmazonProductQuantityHistoryBoolExp
+    - name: MyMutationAmazonProductSummaryBoolExp
+    - name: MyMutationAmazonProductSummaryAggregateBoolExp
+    - name: MyMutationAmazonProductSummaryAggregateBoolExpCount
+    - name: MyMutationAmazonProductTypeBoolExp
+    - name: MyMutationAmazonProductTypeAggregateBoolExp
+    - name: MyMutationAmazonProductTypeAggregateBoolExpCount
+    - name: MyMutationAmazonReportHistoryBoolExp
+    - name: MyMutationAmazonProductAggregateBoolExp
+    - name: MyMutationAmazonProductAggregateBoolExpCount
+    - name: MyMutationUserAmazonAssociationBoolExp
+    - name: MyMutationAmazonReportHistoryAggregateBoolExp
+    - name: MyMutationAmazonReportHistoryAggregateBoolExpCount
+    - name: MyMutationUserBoolExp
+    - name: MyMutationJsonComparisonExp
+    - name: MyMutationEbayInventoryItemBoolExp
+    - name: MyMutationEbayInventoryOfferBoolExp
+    - name: MyMutationBooleanComparisonExp
+    - name: MyMutationEbayInventoryOfferAggregateBoolExp
+    - name: MyMutationEbayInventoryOfferAggregateBoolExpBoolAnd
+    - name: MyMutationEbayInventoryOfferAggregateBoolExpBoolOr
+    - name: MyMutationEbayInventoryOfferAggregateBoolExpCount
+    - name: MyMutationEbayInventoryItemAggregateBoolExp
+    - name: MyMutationEbayInventoryItemAggregateBoolExpCount
+    - name: MyMutationShopifyProductBoolExp
+    - name: MyMutationDateComparisonExp
+    - name: MyMutationShopifyProductVariantBoolExp
+    - name: MyMutationShopifyProductVariantPriceHistoryBoolExp
+    - name: MyMutationShopifyProductVariantQuantityHistoryBoolExp
+    - name: MyMutationShopifyProductVariantAggregateBoolExp
+    - name: MyMutationShopifyProductVariantAggregateBoolExpBoolAnd
+    - name: MyMutationShopifyProductVariantAggregateBoolExpBoolOr
+    - name: MyMutationShopifyProductVariantAggregateBoolExpCount
+    - name: MyMutationShopifyProductAggregateBoolExp
+    - name: MyMutationShopifyProductAggregateBoolExpCount
+    - name: MyMutationUserEbayAssociationBoolExp
+    - name: MyMutationUserShopifyAssociationBoolExp
+    - name: MyMutationEbayProductFeeBoolExp
+    - name: MyMutationEbayProductFeeAggregateBoolExp
+    - name: MyMutationEbayProductFeeAggregateBoolExpCount
+    - name: MyMutationAmazonProductBrandOnConflict
+    - name: MyMutationAmazonProductDescriptionArrRelInsertInput
+    - name: MyMutationAmazonProductDescriptionInsertInput
+    - name: MyMutationAmazonProductDescriptionOnConflict
+    - name: MyMutationAmazonProductFeatureArrRelInsertInput
+    - name: MyMutationAmazonProductFeatureInsertInput
+    - name: MyMutationAmazonProductFeatureOnConflict
+    - name: MyMutationAmazonProductIdentifierArrRelInsertInput
+    - name: MyMutationAmazonProductIdentifierInsertInput
+    - name: MyMutationAmazonProductIdentifierOnConflict
+    - name: MyMutationAmazonProductImageArrRelInsertInput
+    - name: MyMutationAmazonProductImageInsertInput
+    - name: MyMutationAmazonProductImageOnConflict
+    - name: MyMutationAmazonProductItemDimensionArrRelInsertInput
+    - name: MyMutationAmazonProductItemDimensionInsertInput
+    - name: MyMutationAmazonProductItemDimensionOnConflict
+    - name: MyMutationAmazonProductKeywordArrRelInsertInput
+    - name: MyMutationAmazonProductKeywordInsertInput
+    - name: MyMutationAmazonProductKeywordOnConflict
+    - name: MyMutationAmazonProductManufacturerArrRelInsertInput
+    - name: MyMutationAmazonProductManufacturerInsertInput
+    - name: MyMutationAmazonProductManufacturerOnConflict
+    - name: MyMutationAmazonProductPackageDimensionArrRelInsertInput
+    - name: MyMutationAmazonProductPackageDimensionInsertInput
+    - name: MyMutationAmazonProductPackageDimensionOnConflict
+    - name: MyMutationAmazonProductPriceObjRelInsertInput
+    - name: MyMutationAmazonProductPriceInsertInput
+    - name: MyMutationAmazonProductPriceHistoryObjRelInsertInput
+    - name: MyMutationAmazonProductPriceHistoryInsertInput
+    - name: MyMutationAmazonProductPriceHistoryOnConflict
+    - name: MyMutationAmazonProductQuantityObjRelInsertInput
+    - name: MyMutationAmazonProductQuantityInsertInput
+    - name: MyMutationAmazonProductQuantityHistoryObjRelInsertInput
+    - name: MyMutationAmazonProductQuantityHistoryInsertInput
+    - name: MyMutationAmazonProductQuantityHistoryOnConflict
+    - name: MyMutationAmazonProductSummaryArrRelInsertInput
+    - name: MyMutationAmazonProductSummaryInsertInput
+    - name: MyMutationAmazonProductSummaryOnConflict
+    - name: MyMutationAmazonProductTypeArrRelInsertInput
+    - name: MyMutationAmazonProductTypeInsertInput
+    - name: MyMutationAmazonProductTypeOnConflict
+    - name: MyMutationAmazonReportHistoryObjRelInsertInput
+    - name: MyMutationAmazonReportHistoryInsertInput
+    - name: MyMutationAmazonProductArrRelInsertInput
+    - name: MyMutationUserAmazonAssociationObjRelInsertInput
+    - name: MyMutationUserAmazonAssociationInsertInput
+    - name: MyMutationAmazonReportHistoryArrRelInsertInput
+    - name: MyMutationAmazonReportHistoryOnConflict
+    - name: MyMutationUserObjRelInsertInput
+    - name: MyMutationUserInsertInput
+    - name: MyMutationEbayInventoryItemArrRelInsertInput
+    - name: MyMutationEbayInventoryItemInsertInput
+    - name: MyMutationEbayInventoryOfferArrRelInsertInput
+    - name: MyMutationEbayInventoryOfferInsertInput
+    - name: MyMutationEbayInventoryItemObjRelInsertInput
+    - name: MyMutationEbayInventoryItemOnConflict
+    - name: MyMutationEbayInventoryOfferOnConflict
+    - name: MyMutationShopifyProductArrRelInsertInput
+    - name: MyMutationShopifyProductInsertInput
+    - name: MyMutationShopifyProductVariantArrRelInsertInput
+    - name: MyMutationShopifyProductVariantInsertInput
+    - name: MyMutationShopifyProductObjRelInsertInput
+    - name: MyMutationShopifyProductOnConflict
+    - name: MyMutationShopifyProductVariantPriceHistoryObjRelInsertInput
+    - name: MyMutationShopifyProductVariantPriceHistoryInsertInput
+    - name: MyMutationShopifyProductVariantObjRelInsertInput
+    - name: MyMutationShopifyProductVariantOnConflict
+    - name: MyMutationShopifyProductVariantPriceHistoryOnConflict
+    - name: MyMutationShopifyProductVariantQuantityHistoryObjRelInsertInput
+    - name: MyMutationShopifyProductVariantQuantityHistoryInsertInput
+    - name: MyMutationShopifyProductVariantQuantityHistoryOnConflict
+    - name: MyMutationUserEbayAssociationObjRelInsertInput
+    - name: MyMutationUserEbayAssociationInsertInput
+    - name: MyMutationUserEbayAssociationOnConflict
+    - name: MyMutationUserShopifyAssociationObjRelInsertInput
+    - name: MyMutationUserShopifyAssociationInsertInput
+    - name: MyMutationUserShopifyAssociationOnConflict
+    - name: MyMutationUserOnConflict
+    - name: MyMutationUserAmazonAssociationOnConflict
+    - name: MyMutationEbayProductFeeArrRelInsertInput
+    - name: MyMutationEbayProductFeeInsertInput
+    - name: MyMutationEbayProductFeeOnConflict
+  objects:
+    - name: MyMutationOutput
+  scalars: []

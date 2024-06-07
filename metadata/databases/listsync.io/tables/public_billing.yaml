@@ -1,0 +1,10 @@
+table:
+  name: billing
+  schema: public
+object_relationships:
+  - name: app_subscription
+    using:
+      foreign_key_constraint_on: subscription_id
+  - name: tenant
+    using:
+      foreign_key_constraint_on: tenant_id

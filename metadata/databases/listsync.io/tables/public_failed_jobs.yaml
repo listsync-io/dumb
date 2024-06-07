@@ -1,0 +1,3 @@
+table:
+  name: failed_jobs
+  schema: public

@@ -1,0 +1,21 @@
+table:
+  name: ebay_inventory_item
+  schema: public
+object_relationships:
+  - name: amazon_product
+    using:
+      foreign_key_constraint_on: amazon_product_id
+  - name: store
+    using:
+      foreign_key_constraint_on: store_id
+  - name: tenant
+    using:
+      foreign_key_constraint_on: tenant_id
+array_relationships:
+  - name: ebay_inventory_offers
+    using:
+      foreign_key_constraint_on:
+        column: inventory_item_id
+        table:
+          name: ebay_inventory_offer
+          schema: public

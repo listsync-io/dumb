@@ -1,0 +1,15 @@
+table:
+  name: app_subscription_plan
+  schema: public
+object_relationships:
+  - name: app
+    using:
+      foreign_key_constraint_on: app_id
+array_relationships:
+  - name: app_subscriptions
+    using:
+      foreign_key_constraint_on:
+        column: subscription_plan_id
+        table:
+          name: app_subscription
+          schema: public

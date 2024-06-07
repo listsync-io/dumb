@@ -1,0 +1,28 @@
+table:
+  name: amazon_tenant_association
+  schema: public
+object_relationships:
+  - name: store
+    using:
+      foreign_key_constraint_on: store_id
+  - name: tenant
+    using:
+      foreign_key_constraint_on: tenant_id
+array_relationships:
+  - name: amazonReportHistoriesBySellingPartnerId
+    using:
+      foreign_key_constraint_on:
+        column: selling_partner_id
+        table:
+          name: amazon_report_history
+          schema: public
+  - name: amazon_report_histories
+    using:
+      manual_configuration:
+        column_mapping:
+          selling_partner_id: selling_partner_id
+          tenant_id: tenant_id
+        insertion_order: null
+        remote_table:
+          name: amazon_report_history
+          schema: public

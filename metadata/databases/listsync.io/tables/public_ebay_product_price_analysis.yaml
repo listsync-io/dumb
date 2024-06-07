@@ -1,0 +1,10 @@
+table:
+  name: ebay_product_price_analysis
+  schema: public
+object_relationships:
+  - name: store
+    using:
+      foreign_key_constraint_on: store_id
+  - name: tenant
+    using:
+      foreign_key_constraint_on: tenant_id

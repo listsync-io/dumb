@@ -1,0 +1,274 @@
+table:
+  name: tenant
+  schema: public
+object_relationships:
+  - name: ebay_tenant_association
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: ebay_tenant_association
+          schema: public
+  - name: organization
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: organization
+          schema: public
+  - name: shopify_tenant_association
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: shopify_tenant_association
+          schema: public
+  - name: user
+    using:
+      foreign_key_constraint_on: owner_user_id
+array_relationships:
+  - name: amazon_product_brands
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_brand
+          schema: public
+  - name: amazon_product_descriptions
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_description
+          schema: public
+  - name: amazon_product_features
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_feature
+          schema: public
+  - name: amazon_product_identifiers
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_identifier
+          schema: public
+  - name: amazon_product_images
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_image
+          schema: public
+  - name: amazon_product_item_dimensions
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_item_dimension
+          schema: public
+  - name: amazon_product_keywords
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_keyword
+          schema: public
+  - name: amazon_product_manufacturers
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_manufacturer
+          schema: public
+  - name: amazon_product_package_dimensions
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_package_dimension
+          schema: public
+  - name: amazon_product_price_histories
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_price_history
+          schema: public
+  - name: amazon_product_quantity_histories
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_quantity_history
+          schema: public
+  - name: amazon_product_summaries
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_summary
+          schema: public
+  - name: amazon_product_types
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product_type
+          schema: public
+  - name: amazon_products
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_product
+          schema: public
+  - name: amazon_report_histories
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_report_history
+          schema: public
+  - name: amazon_tenant_associations
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: amazon_tenant_association
+          schema: public
+  - name: app_subscriptions
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: app_subscription
+          schema: public
+  - name: app_tenants
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: app_tenant
+          schema: public
+  - name: billings
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: billing
+          schema: public
+  - name: ebay_inventory_items
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: ebay_inventory_item
+          schema: public
+  - name: ebay_inventory_offers
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: ebay_inventory_offer
+          schema: public
+  - name: ebay_product_fees
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: ebay_product_fee
+          schema: public
+  - name: ebay_product_price_analyses
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: ebay_product_price_analysis
+          schema: public
+  - name: ebay_product_price_histories
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: ebay_product_price_history
+          schema: public
+  - name: ebay_product_quantity_histories
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: ebay_product_quantity_history
+          schema: public
+  - name: ebay_tenant_associations
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: ebay_tenant_association
+          schema: public
+  - name: invitations
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: invitation
+          schema: public
+  - name: shopify_product_variant_price_histories
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: shopify_product_variant_price_history
+          schema: public
+  - name: shopify_product_variant_quantity_histories
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: shopify_product_variant_quantity_history
+          schema: public
+  - name: shopify_product_variants
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: shopify_product_variant
+          schema: public
+  - name: shopify_products
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: shopify_product
+          schema: public
+  - name: shopify_tenant_associations
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: shopify_tenant_association
+          schema: public
+  - name: stores
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: store
+          schema: public
+  - name: teams
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: team
+          schema: public
+  - name: user_teams
+    using:
+      foreign_key_constraint_on:
+        column: tenant_id
+        table:
+          name: user_team
+          schema: public

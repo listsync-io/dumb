@@ -1,0 +1,63 @@
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: destroyAmazonProduct
+  methods:
+    - DELETE
+  name: destroyAmazonProduct
+  url: amazon/product
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: storeAmazonProductPriceHistory
+  methods:
+    - POST
+  name: storeAmazonProductPriceHistory
+  url: amazon/product/price/history/store
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: storeAmazonProductQuantityHistory
+  methods:
+    - POST
+  name: storeAmazonProductQuantityHistory
+  url: amazon/product/quantity/history/store
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: insertEbayCategoryMeta
+  methods:
+    - POST
+  name: insertEbayCategoryMeta
+  url: ebay/category/meta/insert
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: insertEbayCategoryTree
+  methods:
+    - POST
+  name: insertEbayCategoryTree
+  url: ebay/category/tree/insert
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: insertEbayProductFee
+  methods:
+    - POST
+  name: insertEbayProductFee
+  url: ebay/product/fee/insert
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: insertUser
+  methods:
+    - POST
+  name: insertUser
+  url: user/insert

@@ -1,0 +1,3 @@
+table:
+  name: shopify_product_variant_quantity
+  schema: public

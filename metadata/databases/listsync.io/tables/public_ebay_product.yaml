@@ -1,0 +1,3 @@
+table:
+  name: ebay_product
+  schema: public

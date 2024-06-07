@@ -1,0 +1,21 @@
+table:
+  name: app_subscription
+  schema: public
+object_relationships:
+  - name: app_subscription_plan
+    using:
+      foreign_key_constraint_on: subscription_plan_id
+  - name: app_tenant
+    using:
+      foreign_key_constraint_on: app_tenant_id
+  - name: tenant
+    using:
+      foreign_key_constraint_on: tenant_id
+array_relationships:
+  - name: billings
+    using:
+      foreign_key_constraint_on:
+        column: subscription_id
+        table:
+          name: billing
+          schema: public

@@ -1,0 +1,28 @@
+table:
+  name: shopify_product
+  schema: public
+object_relationships:
+  - name: amazon_product
+    using:
+      foreign_key_constraint_on: amazon_product_id
+  - name: shopify_product_variant
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: shopify_product_variant
+          schema: public
+  - name: store
+    using:
+      foreign_key_constraint_on: store_id
+  - name: tenant
+    using:
+      foreign_key_constraint_on: tenant_id
+array_relationships:
+  - name: shopify_product_variants
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: shopify_product_variant
+          schema: public

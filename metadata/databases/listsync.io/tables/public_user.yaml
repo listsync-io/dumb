@@ -1,0 +1,25 @@
+table:
+  name: user
+  schema: public
+array_relationships:
+  - name: invitations
+    using:
+      foreign_key_constraint_on:
+        column: invited_by
+        table:
+          name: invitation
+          schema: public
+  - name: tenants
+    using:
+      foreign_key_constraint_on:
+        column: owner_user_id
+        table:
+          name: tenant
+          schema: public
+  - name: user_teams
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          name: user_team
+          schema: public

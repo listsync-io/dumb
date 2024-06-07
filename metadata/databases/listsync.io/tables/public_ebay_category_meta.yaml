@@ -1,0 +1,3 @@
+table:
+  name: ebay_category_meta
+  schema: public

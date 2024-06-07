@@ -1,0 +1,2270 @@
+enum MyMutationAmazonProductConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_id_key
+  """ unique or primary key constraint on columns "product_id" """ amazon_product_product_id_primary
+  """ unique or primary key constraint on columns "seller_sku" """ amazon_product_seller_sku_unique
+}
+
+enum MyMutationAmazonProductUpdateColumn {
+  """ column name """ asin
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ fulfillment_channel
+  """ column name """ id
+  """ column name """ item_condition
+  """ column name """ item_description
+  """ column name """ item_name
+  """ column name """ listing_id
+  """ column name """ marketplace_id
+  """ column name """ open_date
+  """ column name """ product_id
+  """ column name """ seller_sku
+  """ column name """ source_report_id
+  """ column name """ status
+  """ column name """ updated_at
+  """ column name """ user_id
+}
+
+enum MyMutationAmazonProductBrandSelectColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ name
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductDescriptionSelectColumn {
+  """ column name """ content
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductFeatureSelectColumn {
+  """ column name """ content
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductIdentifierSelectColumn {
+  """ column name """ EAN
+  """ column name """ UPC
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductImageSelectColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ height
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+  """ column name """ url
+  """ column name """ variant
+  """ column name """ width
+}
+
+enum MyMutationAmazonProductItemDimensionSelectColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ height
+  """ column name """ height_unit
+  """ column name """ id
+  """ column name """ length
+  """ column name """ length_unit
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+  """ column name """ weight
+  """ column name """ weight_unit
+  """ column name """ width
+  """ column name """ width_unit
+}
+
+enum MyMutationAmazonProductKeywordSelectColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ name
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductManufacturerSelectColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ name
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductPackageDimensionSelectColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ height
+  """ column name """ height_unit
+  """ column name """ id
+  """ column name """ length
+  """ column name """ length_unit
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+  """ column name """ weight
+  """ column name """ weight_unit
+  """ column name """ width
+  """ column name """ width_unit
+}
+
+enum MyMutationAmazonProductSummarySelectColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ item_classification
+  """ column name """ item_name
+  """ column name """ marketplace_id
+  """ column name """ model_number
+  """ column name """ package_quantity
+  """ column name """ product_id
+  """ column name """ size
+  """ column name """ style
+  """ column name """ updated_at
+  """ column name """ website_display_group
+  """ column name """ website_display_group_name
+}
+
+enum MyMutationAmazonProductTypeSelectColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ name
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductSelectColumn {
+  """ column name """ asin
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ fulfillment_channel
+  """ column name """ id
+  """ column name """ item_condition
+  """ column name """ item_description
+  """ column name """ item_name
+  """ column name """ listing_id
+  """ column name """ marketplace_id
+  """ column name """ open_date
+  """ column name """ product_id
+  """ column name """ seller_sku
+  """ column name """ source_report_id
+  """ column name """ status
+  """ column name """ updated_at
+  """ column name """ user_id
+}
+
+enum MyMutationAmazonReportHistorySelectColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ notification_id
+  """ column name """ report_document_id
+  """ column name """ report_id
+  """ column name """ report_type
+  """ column name """ selling_partner_id
+  """ column name """ subscription_id
+  """ column name """ task_id
+  """ column name """ updated_at
+  """ column name """ url
+  """ column name """ user_id
+}
+
+enum MyMutationEbayInventoryOfferSelectColumnEbayInventoryOfferAggregateBoolExpBoolAndArgumentsColumns {
+  """ column name """ published
+}
+
+enum MyMutationEbayInventoryOfferSelectColumnEbayInventoryOfferAggregateBoolExpBoolOrArgumentsColumns {
+  """ column name """ published
+}
+
+enum MyMutationEbayInventoryOfferSelectColumn {
+  """ column name """ amazon_product_id
+  """ column name """ available_quantity
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ format
+  """ column name """ fulfillment_policy_id
+  """ column name """ id
+  """ column name """ inventory_item_id
+  """ column name """ listing_description
+  """ column name """ merchant_location_key
+  """ column name """ offer_id
+  """ column name """ payment_policy_id
+  """ column name """ primary_category_id
+  """ column name """ published
+  """ column name """ quantity_limit_per_buyer
+  """ column name """ return_policy_id
+  """ column name """ sku
+  """ column name """ updated_at
+  """ column name """ user_id
+}
+
+enum MyMutationEbayInventoryItemSelectColumn {
+  """ column name """ amazon_product_id
+  """ column name """ condition
+  """ column name """ condition_description
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ description
+  """ column name """ id
+  """ column name """ quantity
+  """ column name """ sku
+  """ column name """ title
+  """ column name """ updated_at
+  """ column name """ user_id
+}
+
+enum MyMutationShopifyProductVariantSelectColumnShopifyProductVariantAggregateBoolExpBoolAndArgumentsColumns {
+  """ column name """ taxable
+}
+
+enum MyMutationShopifyProductVariantSelectColumnShopifyProductVariantAggregateBoolExpBoolOrArgumentsColumns {
+  """ column name """ taxable
+}
+
+enum MyMutationShopifyProductVariantSelectColumn {
+  """ column name """ barcode
+  """ column name """ compare_at_price
+  """ column name """ created_at
+  """ column name """ fulfillment_service
+  """ column name """ id
+  """ column name """ inventory_management
+  """ column name """ inventory_policy
+  """ column name """ position
+  """ column name """ product_id
+  """ column name """ shopify_listing_variant_id
+  """ column name """ sku
+  """ column name """ taxable
+  """ column name """ title
+  """ column name """ updated_at
+  """ column name """ variant_id
+}
+
+enum MyMutationShopifyProductSelectColumn {
+  """ column name """ amazon_product_id
+  """ column name """ body_html
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ handle
+  """ column name """ id
+  """ column name """ product_id
+  """ column name """ product_type
+  """ column name """ published_at
+  """ column name """ published_scope
+  """ column name """ shopify_listing_id
+  """ column name """ title
+  """ column name """ updated_at
+  """ column name """ user_id
+  """ column name """ vendor
+}
+
+enum MyMutationEbayProductFeeSelectColumn {
+  """ column name """ amazon_product_id
+  """ column name """ created_at
+  """ column name """ id
+  """ column name """ listing_fee
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductBrandConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_brand_id_primary
+}
+
+enum MyMutationAmazonProductBrandUpdateColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ name
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductDescriptionConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_description_id_primary
+}
+
+enum MyMutationAmazonProductDescriptionUpdateColumn {
+  """ column name """ content
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductFeatureConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_feature_id_primary
+}
+
+enum MyMutationAmazonProductFeatureUpdateColumn {
+  """ column name """ content
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductIdentifierConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_identifier_id_primary
+}
+
+enum MyMutationAmazonProductIdentifierUpdateColumn {
+  """ column name """ EAN
+  """ column name """ UPC
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductImageConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_image_id_primary
+}
+
+enum MyMutationAmazonProductImageUpdateColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ height
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+  """ column name """ url
+  """ column name """ variant
+  """ column name """ width
+}
+
+enum MyMutationAmazonProductItemDimensionConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_item_dimension_id_primary
+}
+
+enum MyMutationAmazonProductItemDimensionUpdateColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ height
+  """ column name """ height_unit
+  """ column name """ id
+  """ column name """ length
+  """ column name """ length_unit
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+  """ column name """ weight
+  """ column name """ weight_unit
+  """ column name """ width
+  """ column name """ width_unit
+}
+
+enum MyMutationAmazonProductKeywordConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_keyword_id_primary
+}
+
+enum MyMutationAmazonProductKeywordUpdateColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ name
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductManufacturerConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_manufacturer_id_primary
+}
+
+enum MyMutationAmazonProductManufacturerUpdateColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ name
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductPackageDimensionConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_package_dimension_id_primary
+}
+
+enum MyMutationAmazonProductPackageDimensionUpdateColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ height
+  """ column name """ height_unit
+  """ column name """ id
+  """ column name """ length
+  """ column name """ length_unit
+  """ column name """ marketplace_id
+  """ column name """ product_id
+  """ column name """ updated_at
+  """ column name """ weight
+  """ column name """ weight_unit
+  """ column name """ width
+  """ column name """ width_unit
+}
+
+enum MyMutationAmazonProductPriceHistoryConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_price_history_id_key
+  """ unique or primary key constraint on columns "product_id" """ amazon_product_price_history_product_id_primary
+}
+
+enum MyMutationAmazonProductPriceHistoryUpdateColumn {
+  """ column name """ created_at
+  """ column name """ id
+  """ column name """ price_change
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductQuantityHistoryConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_quantity_history_id_key
+  """ unique or primary key constraint on columns "product_id" """ amazon_product_quantity_history_product_id_primary
+}
+
+enum MyMutationAmazonProductQuantityHistoryUpdateColumn {
+  """ column name """ created_at
+  """ column name """ id
+  """ column name """ product_id
+  """ column name """ quantity_change
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonProductSummaryConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_summary_id_primary
+}
+
+enum MyMutationAmazonProductSummaryUpdateColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ item_classification
+  """ column name """ item_name
+  """ column name """ marketplace_id
+  """ column name """ model_number
+  """ column name """ package_quantity
+  """ column name """ product_id
+  """ column name """ size
+  """ column name """ style
+  """ column name """ updated_at
+  """ column name """ website_display_group
+  """ column name """ website_display_group_name
+}
+
+enum MyMutationAmazonProductTypeConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_product_type_id_primary
+}
+
+enum MyMutationAmazonProductTypeUpdateColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ marketplace_id
+  """ column name """ name
+  """ column name """ product_id
+  """ column name """ updated_at
+}
+
+enum MyMutationAmazonReportHistoryConstraint {
+  """ unique or primary key constraint on columns "id" """ amazon_report_history_id_key
+  """ unique or primary key constraint on columns "report_id" """ amazon_report_history_report_id_unique
+}
+
+enum MyMutationAmazonReportHistoryUpdateColumn {
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ notification_id
+  """ column name """ report_document_id
+  """ column name """ report_id
+  """ column name """ report_type
+  """ column name """ selling_partner_id
+  """ column name """ subscription_id
+  """ column name """ task_id
+  """ column name """ updated_at
+  """ column name """ url
+  """ column name """ user_id
+}
+
+enum MyMutationEbayInventoryItemConstraint {
+  """ unique or primary key constraint on columns "id" """ ebay_inventory_item_id_key
+}
+
+enum MyMutationEbayInventoryItemUpdateColumn {
+  """ column name """ amazon_product_id
+  """ column name """ condition
+  """ column name """ condition_description
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ description
+  """ column name """ id
+  """ column name """ quantity
+  """ column name """ sku
+  """ column name """ title
+  """ column name """ updated_at
+  """ column name """ user_id
+}
+
+enum MyMutationEbayInventoryOfferConstraint {
+  """ unique or primary key constraint on columns "id" """ ebay_inventory_offer_id_key
+}
+
+enum MyMutationEbayInventoryOfferUpdateColumn {
+  """ column name """ amazon_product_id
+  """ column name """ available_quantity
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ format
+  """ column name """ fulfillment_policy_id
+  """ column name """ id
+  """ column name """ inventory_item_id
+  """ column name """ listing_description
+  """ column name """ merchant_location_key
+  """ column name """ offer_id
+  """ column name """ payment_policy_id
+  """ column name """ primary_category_id
+  """ column name """ published
+  """ column name """ quantity_limit_per_buyer
+  """ column name """ return_policy_id
+  """ column name """ sku
+  """ column name """ updated_at
+  """ column name """ user_id
+}
+
+enum MyMutationShopifyProductConstraint {
+  """ unique or primary key constraint on columns "id" """ shopify_product_id_key
+  """ unique or primary key constraint on columns "product_id" """ shopify_product_product_id_primary
+  """ unique or primary key constraint on columns "shopify_listing_id" """ shopify_product_shopify_listing_id_unique
+}
+
+enum MyMutationShopifyProductUpdateColumn {
+  """ column name """ amazon_product_id
+  """ column name """ body_html
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ handle
+  """ column name """ id
+  """ column name """ product_id
+  """ column name """ product_type
+  """ column name """ published_at
+  """ column name """ published_scope
+  """ column name """ shopify_listing_id
+  """ column name """ title
+  """ column name """ updated_at
+  """ column name """ user_id
+  """ column name """ vendor
+}
+
+enum MyMutationShopifyProductVariantConstraint {
+  """ unique or primary key constraint on columns "id" """ shopify_product_variant_id_key
+  """ unique or primary key constraint on columns "variant_id", "product_id" """ shopify_product_variant_product_id_variant_id_primary
+}
+
+enum MyMutationShopifyProductVariantUpdateColumn {
+  """ column name """ barcode
+  """ column name """ compare_at_price
+  """ column name """ created_at
+  """ column name """ fulfillment_service
+  """ column name """ id
+  """ column name """ inventory_management
+  """ column name """ inventory_policy
+  """ column name """ position
+  """ column name """ product_id
+  """ column name """ shopify_listing_variant_id
+  """ column name """ sku
+  """ column name """ taxable
+  """ column name """ title
+  """ column name """ updated_at
+  """ column name """ variant_id
+}
+
+enum MyMutationShopifyProductVariantPriceHistoryConstraint {
+  """ unique or primary key constraint on columns "id" """ shopify_product_variant_price_history_id_key
+  """ unique or primary key constraint on columns "variant_id", "product_id" """ shopify_product_variant_price_history_product_id_variant_id_pri
+}
+
+enum MyMutationShopifyProductVariantPriceHistoryUpdateColumn {
+  """ column name """ created_at
+  """ column name """ id
+  """ column name """ price_change
+  """ column name """ product_id
+  """ column name """ updated_at
+  """ column name """ variant_id
+}
+
+enum MyMutationShopifyProductVariantQuantityHistoryConstraint {
+  """ unique or primary key constraint on columns "id" """ shopify_product_variant_quantity_history_id_key
+  """ unique or primary key constraint on columns "variant_id", "product_id" """ shopify_product_variant_quantity_history_product_id_variant_id_
+}
+
+enum MyMutationShopifyProductVariantQuantityHistoryUpdateColumn {
+  """ column name """ created_at
+  """ column name """ id
+  """ column name """ product_id
+  """ column name """ quantity_change
+  """ column name """ updated_at
+  """ column name """ variant_id
+}
+
+enum MyMutationUserEbayAssociationConstraint {
+  """ unique or primary key constraint on columns "id" """ user_ebay_association_id_key
+  """ unique or primary key constraint on columns "user_id" """ user_ebay_association_user_id_primary
+}
+
+enum MyMutationUserEbayAssociationUpdateColumn {
+  """ column name """ access_token
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ updated_at
+  """ column name """ user_id
+}
+
+enum MyMutationUserShopifyAssociationConstraint {
+  """ unique or primary key constraint on columns "id" """ user_shopify_association_id_key
+  """ unique or primary key constraint on columns "user_id" """ user_shopify_association_user_id_primary
+}
+
+enum MyMutationUserShopifyAssociationUpdateColumn {
+  """ column name """ access_token
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ domain
+  """ column name """ id
+  """ column name """ updated_at
+  """ column name """ user_id
+}
+
+enum MyMutationUserConstraint {
+  """ unique or primary key constraint on columns "email" """ user_email_unique
+  """ unique or primary key constraint on columns "id" """ user_id_key
+  """ unique or primary key constraint on columns "provider", "sub" """ user_provider_sub_primary
+  """ unique or primary key constraint on columns "user_id" """ user_user_id_unique
+}
+
+enum MyMutationUserUpdateColumn {
+  """ column name """ created_at
+  """ column name """ data
+  """ column name """ deleted_at
+  """ column name """ email
+  """ column name """ id
+  """ column name """ provider
+  """ column name """ sub
+  """ column name """ updated_at
+  """ column name """ user_id
+}
+
+enum MyMutationUserAmazonAssociationConstraint {
+  """ unique or primary key constraint on columns "id" """ user_amazon_association_id_key
+  """ unique or primary key constraint on columns "user_id", "selling_partner_id" """ user_amazon_association_user_id_selling_partner_id_primary
+}
+
+enum MyMutationUserAmazonAssociationUpdateColumn {
+  """ column name """ access_token
+  """ column name """ created_at
+  """ column name """ deleted_at
+  """ column name """ id
+  """ column name """ refresh_token
+  """ column name """ selling_partner_id
+  """ column name """ updated_at
+  """ column name """ user_id
+}
+
+enum MyMutationEbayProductFeeConstraint {
+  """ unique or primary key constraint on columns "id" """ ebay_product_fee_id_primary
+}
+
+enum MyMutationEbayProductFeeUpdateColumn {
+  """ column name """ amazon_product_id
+  """ column name """ created_at
+  """ column name """ id
+  """ column name """ listing_fee
+  """ column name """ updated_at
+}
+
+input MyMutationAmazonProductInsertInput {
+  amazon_product_brands: MyMutationAmazonProductBrandArrRelInsertInput
+  amazon_product_descriptions: MyMutationAmazonProductDescriptionArrRelInsertInput
+  amazon_product_features: MyMutationAmazonProductFeatureArrRelInsertInput
+  amazon_product_identifiers: MyMutationAmazonProductIdentifierArrRelInsertInput
+  amazon_product_images: MyMutationAmazonProductImageArrRelInsertInput
+  amazon_product_item_dimensions: MyMutationAmazonProductItemDimensionArrRelInsertInput
+  amazon_product_keywords: MyMutationAmazonProductKeywordArrRelInsertInput
+  amazon_product_manufacturers: MyMutationAmazonProductManufacturerArrRelInsertInput
+  amazon_product_package_dimensions: MyMutationAmazonProductPackageDimensionArrRelInsertInput
+  amazon_product_price: MyMutationAmazonProductPriceObjRelInsertInput
+  amazon_product_price_history: MyMutationAmazonProductPriceHistoryObjRelInsertInput
+  amazon_product_quantity: MyMutationAmazonProductQuantityObjRelInsertInput
+  amazon_product_quantity_history: MyMutationAmazonProductQuantityHistoryObjRelInsertInput
+  amazon_product_summaries: MyMutationAmazonProductSummaryArrRelInsertInput
+  amazon_product_types: MyMutationAmazonProductTypeArrRelInsertInput
+  amazon_report_history: MyMutationAmazonReportHistoryObjRelInsertInput
+  asin: String
+  created_at: timestamptz
+  deleted_at: timestamptz
+  ebay_inventory_items: MyMutationEbayInventoryItemArrRelInsertInput
+  ebay_inventory_offers: MyMutationEbayInventoryOfferArrRelInsertInput
+  ebay_product_fees: MyMutationEbayProductFeeArrRelInsertInput
+  fulfillment_channel: String
+  id: Int
+  item_condition: Int
+  item_description: String
+  item_name: String
+  listing_id: String
+  marketplace_id: String
+  open_date: date
+  product_id: String
+  seller_sku: String
+  shopify_products: MyMutationShopifyProductArrRelInsertInput
+  source_report_id: String
+  status: String
+  updated_at: timestamptz
+  user: MyMutationUserObjRelInsertInput
+  user_id: String
+}
+
+input MyMutationAmazonProductBrandArrRelInsertInput {
+  data: [MyMutationAmazonProductBrandInsertInput!]!
+  on_conflict: MyMutationAmazonProductBrandOnConflict
+}
+
+input MyMutationAmazonProductBrandInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  marketplace_id: String
+  name: String
+  product_id: String
+  updated_at: timestamptz
+}
+
+input MyMutationAmazonProductObjRelInsertInput {
+  data: MyMutationAmazonProductInsertInput!
+  on_conflict: MyMutationAmazonProductOnConflict
+}
+
+input MyMutationAmazonProductOnConflict {
+  constraint: MyMutationAmazonProductConstraint!
+  update_columns: [MyMutationAmazonProductUpdateColumn!]!
+  where: MyMutationAmazonProductBoolExp
+}
+
+input MyMutationAmazonProductBoolExp {
+  _and: [MyMutationAmazonProductBoolExp!]
+  _not: MyMutationAmazonProductBoolExp
+  _or: [MyMutationAmazonProductBoolExp!]
+  amazon_product_brands: MyMutationAmazonProductBrandBoolExp
+  amazon_product_brands_aggregate: MyMutationAmazonProductBrandAggregateBoolExp
+  amazon_product_descriptions: MyMutationAmazonProductDescriptionBoolExp
+  amazon_product_descriptions_aggregate: MyMutationAmazonProductDescriptionAggregateBoolExp
+  amazon_product_features: MyMutationAmazonProductFeatureBoolExp
+  amazon_product_features_aggregate: MyMutationAmazonProductFeatureAggregateBoolExp
+  amazon_product_identifiers: MyMutationAmazonProductIdentifierBoolExp
+  amazon_product_identifiers_aggregate: MyMutationAmazonProductIdentifierAggregateBoolExp
+  amazon_product_images: MyMutationAmazonProductImageBoolExp
+  amazon_product_images_aggregate: MyMutationAmazonProductImageAggregateBoolExp
+  amazon_product_item_dimensions: MyMutationAmazonProductItemDimensionBoolExp
+  amazon_product_item_dimensions_aggregate: MyMutationAmazonProductItemDimensionAggregateBoolExp
+  amazon_product_keywords: MyMutationAmazonProductKeywordBoolExp
+  amazon_product_keywords_aggregate: MyMutationAmazonProductKeywordAggregateBoolExp
+  amazon_product_manufacturers: MyMutationAmazonProductManufacturerBoolExp
+  amazon_product_manufacturers_aggregate: MyMutationAmazonProductManufacturerAggregateBoolExp
+  amazon_product_package_dimensions: MyMutationAmazonProductPackageDimensionBoolExp
+  amazon_product_package_dimensions_aggregate: MyMutationAmazonProductPackageDimensionAggregateBoolExp
+  amazon_product_price: MyMutationAmazonProductPriceBoolExp
+  amazon_product_price_history: MyMutationAmazonProductPriceHistoryBoolExp
+  amazon_product_quantity: MyMutationAmazonProductQuantityBoolExp
+  amazon_product_quantity_history: MyMutationAmazonProductQuantityHistoryBoolExp
+  amazon_product_summaries: MyMutationAmazonProductSummaryBoolExp
+  amazon_product_summaries_aggregate: MyMutationAmazonProductSummaryAggregateBoolExp
+  amazon_product_types: MyMutationAmazonProductTypeBoolExp
+  amazon_product_types_aggregate: MyMutationAmazonProductTypeAggregateBoolExp
+  amazon_report_history: MyMutationAmazonReportHistoryBoolExp
+  asin: MyMutationStringComparisonExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  ebay_inventory_items: MyMutationEbayInventoryItemBoolExp
+  ebay_inventory_items_aggregate: MyMutationEbayInventoryItemAggregateBoolExp
+  ebay_inventory_offers: MyMutationEbayInventoryOfferBoolExp
+  ebay_inventory_offers_aggregate: MyMutationEbayInventoryOfferAggregateBoolExp
+  ebay_product_fees: MyMutationEbayProductFeeBoolExp
+  ebay_product_fees_aggregate: MyMutationEbayProductFeeAggregateBoolExp
+  fulfillment_channel: MyMutationStringComparisonExp
+  id: MyMutationIntComparisonExp
+  item_condition: MyMutationIntComparisonExp
+  item_description: MyMutationStringComparisonExp
+  item_name: MyMutationStringComparisonExp
+  listing_id: MyMutationStringComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  open_date: MyMutationDateComparisonExp
+  product_id: MyMutationStringComparisonExp
+  seller_sku: MyMutationStringComparisonExp
+  shopify_products: MyMutationShopifyProductBoolExp
+  shopify_products_aggregate: MyMutationShopifyProductAggregateBoolExp
+  source_report_id: MyMutationStringComparisonExp
+  status: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  user: MyMutationUserBoolExp
+  user_id: MyMutationStringComparisonExp
+}
+
+input MyMutationAmazonProductBrandBoolExp {
+  _and: [MyMutationAmazonProductBrandBoolExp!]
+  _not: MyMutationAmazonProductBrandBoolExp
+  _or: [MyMutationAmazonProductBrandBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  name: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+}
+
+input MyMutationTimestamptzComparisonExp {
+  _eq: timestamptz
+  _gt: timestamptz
+  _gte: timestamptz
+  _in: [timestamptz!]
+  _is_null: Boolean
+  _lt: timestamptz
+  _lte: timestamptz
+  _neq: timestamptz
+  _nin: [timestamptz!]
+}
+
+input MyMutationIntComparisonExp {
+  _eq: Int
+  _gt: Int
+  _gte: Int
+  _in: [Int!]
+  _is_null: Boolean
+  _lt: Int
+  _lte: Int
+  _neq: Int
+  _nin: [Int!]
+}
+
+input MyMutationStringComparisonExp {
+  _eq: String
+  _gt: String
+  _gte: String
+  _ilike: String
+  _in: [String!]
+  _iregex: String
+  _is_null: Boolean
+  _like: String
+  _lt: String
+  _lte: String
+  _neq: String
+  _nilike: String
+  _nin: [String!]
+  _niregex: String
+  _nlike: String
+  _nregex: String
+  _nsimilar: String
+  _regex: String
+  _similar: String
+}
+
+input MyMutationAmazonProductBrandAggregateBoolExp {
+  count: MyMutationAmazonProductBrandAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductBrandAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductBrandSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductBrandBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductDescriptionBoolExp {
+  _and: [MyMutationAmazonProductDescriptionBoolExp!]
+  _not: MyMutationAmazonProductDescriptionBoolExp
+  _or: [MyMutationAmazonProductDescriptionBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  content: MyMutationStringComparisonExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+}
+
+input MyMutationAmazonProductDescriptionAggregateBoolExp {
+  count: MyMutationAmazonProductDescriptionAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductDescriptionAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductDescriptionSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductDescriptionBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductFeatureBoolExp {
+  _and: [MyMutationAmazonProductFeatureBoolExp!]
+  _not: MyMutationAmazonProductFeatureBoolExp
+  _or: [MyMutationAmazonProductFeatureBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  content: MyMutationStringComparisonExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+}
+
+input MyMutationAmazonProductFeatureAggregateBoolExp {
+  count: MyMutationAmazonProductFeatureAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductFeatureAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductFeatureSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductFeatureBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductIdentifierBoolExp {
+  EAN: MyMutationStringComparisonExp
+  UPC: MyMutationStringComparisonExp
+  _and: [MyMutationAmazonProductIdentifierBoolExp!]
+  _not: MyMutationAmazonProductIdentifierBoolExp
+  _or: [MyMutationAmazonProductIdentifierBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+}
+
+input MyMutationAmazonProductIdentifierAggregateBoolExp {
+  count: MyMutationAmazonProductIdentifierAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductIdentifierAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductIdentifierSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductIdentifierBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductImageBoolExp {
+  _and: [MyMutationAmazonProductImageBoolExp!]
+  _not: MyMutationAmazonProductImageBoolExp
+  _or: [MyMutationAmazonProductImageBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  height: MyMutationStringComparisonExp
+  id: MyMutationIntComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  url: MyMutationStringComparisonExp
+  variant: MyMutationStringComparisonExp
+  width: MyMutationStringComparisonExp
+}
+
+input MyMutationAmazonProductImageAggregateBoolExp {
+  count: MyMutationAmazonProductImageAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductImageAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductImageSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductImageBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductItemDimensionBoolExp {
+  _and: [MyMutationAmazonProductItemDimensionBoolExp!]
+  _not: MyMutationAmazonProductItemDimensionBoolExp
+  _or: [MyMutationAmazonProductItemDimensionBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  height: MyMutationStringComparisonExp
+  height_unit: MyMutationStringComparisonExp
+  id: MyMutationIntComparisonExp
+  length: MyMutationStringComparisonExp
+  length_unit: MyMutationStringComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  weight: MyMutationStringComparisonExp
+  weight_unit: MyMutationStringComparisonExp
+  width: MyMutationStringComparisonExp
+  width_unit: MyMutationStringComparisonExp
+}
+
+input MyMutationAmazonProductItemDimensionAggregateBoolExp {
+  count: MyMutationAmazonProductItemDimensionAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductItemDimensionAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductItemDimensionSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductItemDimensionBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductKeywordBoolExp {
+  _and: [MyMutationAmazonProductKeywordBoolExp!]
+  _not: MyMutationAmazonProductKeywordBoolExp
+  _or: [MyMutationAmazonProductKeywordBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  name: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+}
+
+input MyMutationAmazonProductKeywordAggregateBoolExp {
+  count: MyMutationAmazonProductKeywordAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductKeywordAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductKeywordSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductKeywordBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductManufacturerBoolExp {
+  _and: [MyMutationAmazonProductManufacturerBoolExp!]
+  _not: MyMutationAmazonProductManufacturerBoolExp
+  _or: [MyMutationAmazonProductManufacturerBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  name: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+}
+
+input MyMutationAmazonProductManufacturerAggregateBoolExp {
+  count: MyMutationAmazonProductManufacturerAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductManufacturerAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductManufacturerSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductManufacturerBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductPackageDimensionBoolExp {
+  _and: [MyMutationAmazonProductPackageDimensionBoolExp!]
+  _not: MyMutationAmazonProductPackageDimensionBoolExp
+  _or: [MyMutationAmazonProductPackageDimensionBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  height: MyMutationStringComparisonExp
+  height_unit: MyMutationStringComparisonExp
+  id: MyMutationIntComparisonExp
+  length: MyMutationStringComparisonExp
+  length_unit: MyMutationStringComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  weight: MyMutationStringComparisonExp
+  weight_unit: MyMutationStringComparisonExp
+  width: MyMutationStringComparisonExp
+  width_unit: MyMutationStringComparisonExp
+}
+
+input MyMutationAmazonProductPackageDimensionAggregateBoolExp {
+  count: MyMutationAmazonProductPackageDimensionAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductPackageDimensionAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductPackageDimensionSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductPackageDimensionBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductPriceBoolExp {
+  _and: [MyMutationAmazonProductPriceBoolExp!]
+  _not: MyMutationAmazonProductPriceBoolExp
+  _or: [MyMutationAmazonProductPriceBoolExp!]
+  current_price: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+}
+
+input MyMutationAmazonProductPriceHistoryBoolExp {
+  _and: [MyMutationAmazonProductPriceHistoryBoolExp!]
+  _not: MyMutationAmazonProductPriceHistoryBoolExp
+  _or: [MyMutationAmazonProductPriceHistoryBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  price_change: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+}
+
+input MyMutationAmazonProductQuantityBoolExp {
+  _and: [MyMutationAmazonProductQuantityBoolExp!]
+  _not: MyMutationAmazonProductQuantityBoolExp
+  _or: [MyMutationAmazonProductQuantityBoolExp!]
+  current_quantity: MyMutationBigintComparisonExp
+  product_id: MyMutationStringComparisonExp
+}
+
+input MyMutationBigintComparisonExp {
+  _eq: bigint
+  _gt: bigint
+  _gte: bigint
+  _in: [bigint!]
+  _is_null: Boolean
+  _lt: bigint
+  _lte: bigint
+  _neq: bigint
+  _nin: [bigint!]
+}
+
+input MyMutationAmazonProductQuantityHistoryBoolExp {
+  _and: [MyMutationAmazonProductQuantityHistoryBoolExp!]
+  _not: MyMutationAmazonProductQuantityHistoryBoolExp
+  _or: [MyMutationAmazonProductQuantityHistoryBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  product_id: MyMutationStringComparisonExp
+  quantity_change: MyMutationIntComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+}
+
+input MyMutationAmazonProductSummaryBoolExp {
+  _and: [MyMutationAmazonProductSummaryBoolExp!]
+  _not: MyMutationAmazonProductSummaryBoolExp
+  _or: [MyMutationAmazonProductSummaryBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  item_classification: MyMutationStringComparisonExp
+  item_name: MyMutationStringComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  model_number: MyMutationStringComparisonExp
+  package_quantity: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  size: MyMutationStringComparisonExp
+  style: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  website_display_group: MyMutationStringComparisonExp
+  website_display_group_name: MyMutationStringComparisonExp
+}
+
+input MyMutationAmazonProductSummaryAggregateBoolExp {
+  count: MyMutationAmazonProductSummaryAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductSummaryAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductSummarySelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductSummaryBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductTypeBoolExp {
+  _and: [MyMutationAmazonProductTypeBoolExp!]
+  _not: MyMutationAmazonProductTypeBoolExp
+  _or: [MyMutationAmazonProductTypeBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  marketplace_id: MyMutationStringComparisonExp
+  name: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+}
+
+input MyMutationAmazonProductTypeAggregateBoolExp {
+  count: MyMutationAmazonProductTypeAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductTypeAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductTypeSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductTypeBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonReportHistoryBoolExp {
+  _and: [MyMutationAmazonReportHistoryBoolExp!]
+  _not: MyMutationAmazonReportHistoryBoolExp
+  _or: [MyMutationAmazonReportHistoryBoolExp!]
+  amazon_products: MyMutationAmazonProductBoolExp
+  amazon_products_aggregate: MyMutationAmazonProductAggregateBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  notification_id: MyMutationStringComparisonExp
+  report_document_id: MyMutationStringComparisonExp
+  report_id: MyMutationStringComparisonExp
+  report_type: MyMutationStringComparisonExp
+  selling_partner_id: MyMutationStringComparisonExp
+  subscription_id: MyMutationStringComparisonExp
+  task_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  url: MyMutationStringComparisonExp
+  user_amazon_association: MyMutationUserAmazonAssociationBoolExp
+  user_id: MyMutationStringComparisonExp
+}
+
+input MyMutationAmazonProductAggregateBoolExp {
+  count: MyMutationAmazonProductAggregateBoolExpCount
+}
+
+input MyMutationAmazonProductAggregateBoolExpCount {
+  arguments: [MyMutationAmazonProductSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonProductBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationUserAmazonAssociationBoolExp {
+  _and: [MyMutationUserAmazonAssociationBoolExp!]
+  _not: MyMutationUserAmazonAssociationBoolExp
+  _or: [MyMutationUserAmazonAssociationBoolExp!]
+  access_token: MyMutationStringComparisonExp
+  amazon_report_histories: MyMutationAmazonReportHistoryBoolExp
+  amazon_report_histories_aggregate: MyMutationAmazonReportHistoryAggregateBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  refresh_token: MyMutationStringComparisonExp
+  selling_partner_id: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  user: MyMutationUserBoolExp
+  user_id: MyMutationStringComparisonExp
+}
+
+input MyMutationAmazonReportHistoryAggregateBoolExp {
+  count: MyMutationAmazonReportHistoryAggregateBoolExpCount
+}
+
+input MyMutationAmazonReportHistoryAggregateBoolExpCount {
+  arguments: [MyMutationAmazonReportHistorySelectColumn!]
+  distinct: Boolean
+  filter: MyMutationAmazonReportHistoryBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationUserBoolExp {
+  _and: [MyMutationUserBoolExp!]
+  _not: MyMutationUserBoolExp
+  _or: [MyMutationUserBoolExp!]
+  amazon_products: MyMutationAmazonProductBoolExp
+  amazon_products_aggregate: MyMutationAmazonProductAggregateBoolExp
+  created_at: MyMutationTimestamptzComparisonExp
+  data: MyMutationJsonComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  ebay_inventory_items: MyMutationEbayInventoryItemBoolExp
+  ebay_inventory_items_aggregate: MyMutationEbayInventoryItemAggregateBoolExp
+  ebay_inventory_offers: MyMutationEbayInventoryOfferBoolExp
+  ebay_inventory_offers_aggregate: MyMutationEbayInventoryOfferAggregateBoolExp
+  email: MyMutationStringComparisonExp
+  id: MyMutationIntComparisonExp
+  provider: MyMutationStringComparisonExp
+  shopify_products: MyMutationShopifyProductBoolExp
+  shopify_products_aggregate: MyMutationShopifyProductAggregateBoolExp
+  sub: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  user_amazon_association: MyMutationUserAmazonAssociationBoolExp
+  user_ebay_association: MyMutationUserEbayAssociationBoolExp
+  user_id: MyMutationStringComparisonExp
+  user_shopify_association: MyMutationUserShopifyAssociationBoolExp
+}
+
+input MyMutationJsonComparisonExp {
+  _eq: json
+  _gt: json
+  _gte: json
+  _in: [json!]
+  _is_null: Boolean
+  _lt: json
+  _lte: json
+  _neq: json
+  _nin: [json!]
+}
+
+input MyMutationEbayInventoryItemBoolExp {
+  _and: [MyMutationEbayInventoryItemBoolExp!]
+  _not: MyMutationEbayInventoryItemBoolExp
+  _or: [MyMutationEbayInventoryItemBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  amazon_product_id: MyMutationStringComparisonExp
+  condition: MyMutationStringComparisonExp
+  condition_description: MyMutationStringComparisonExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  description: MyMutationStringComparisonExp
+  ebay_inventory_offers: MyMutationEbayInventoryOfferBoolExp
+  ebay_inventory_offers_aggregate: MyMutationEbayInventoryOfferAggregateBoolExp
+  id: MyMutationIntComparisonExp
+  quantity: MyMutationStringComparisonExp
+  sku: MyMutationStringComparisonExp
+  title: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  user: MyMutationUserBoolExp
+  user_id: MyMutationStringComparisonExp
+}
+
+input MyMutationEbayInventoryOfferBoolExp {
+  _and: [MyMutationEbayInventoryOfferBoolExp!]
+  _not: MyMutationEbayInventoryOfferBoolExp
+  _or: [MyMutationEbayInventoryOfferBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  amazon_product_id: MyMutationStringComparisonExp
+  available_quantity: MyMutationStringComparisonExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  ebay_inventory_item: MyMutationEbayInventoryItemBoolExp
+  format: MyMutationStringComparisonExp
+  fulfillment_policy_id: MyMutationStringComparisonExp
+  id: MyMutationIntComparisonExp
+  inventory_item_id: MyMutationIntComparisonExp
+  listing_description: MyMutationStringComparisonExp
+  merchant_location_key: MyMutationStringComparisonExp
+  offer_id: MyMutationStringComparisonExp
+  payment_policy_id: MyMutationStringComparisonExp
+  primary_category_id: MyMutationStringComparisonExp
+  published: MyMutationBooleanComparisonExp
+  quantity_limit_per_buyer: MyMutationStringComparisonExp
+  return_policy_id: MyMutationStringComparisonExp
+  sku: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  user: MyMutationUserBoolExp
+  user_id: MyMutationStringComparisonExp
+}
+
+input MyMutationBooleanComparisonExp {
+  _eq: Boolean
+  _gt: Boolean
+  _gte: Boolean
+  _in: [Boolean!]
+  _is_null: Boolean
+  _lt: Boolean
+  _lte: Boolean
+  _neq: Boolean
+  _nin: [Boolean!]
+}
+
+input MyMutationEbayInventoryOfferAggregateBoolExp {
+  bool_and: MyMutationEbayInventoryOfferAggregateBoolExpBoolAnd
+  bool_or: MyMutationEbayInventoryOfferAggregateBoolExpBoolOr
+  count: MyMutationEbayInventoryOfferAggregateBoolExpCount
+}
+
+input MyMutationEbayInventoryOfferAggregateBoolExpBoolAnd {
+  arguments: MyMutationEbayInventoryOfferSelectColumnEbayInventoryOfferAggregateBoolExpBoolAndArgumentsColumns!
+  distinct: Boolean
+  filter: MyMutationEbayInventoryOfferBoolExp
+  predicate: MyMutationBooleanComparisonExp!
+}
+
+input MyMutationEbayInventoryOfferAggregateBoolExpBoolOr {
+  arguments: MyMutationEbayInventoryOfferSelectColumnEbayInventoryOfferAggregateBoolExpBoolOrArgumentsColumns!
+  distinct: Boolean
+  filter: MyMutationEbayInventoryOfferBoolExp
+  predicate: MyMutationBooleanComparisonExp!
+}
+
+input MyMutationEbayInventoryOfferAggregateBoolExpCount {
+  arguments: [MyMutationEbayInventoryOfferSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationEbayInventoryOfferBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationEbayInventoryItemAggregateBoolExp {
+  count: MyMutationEbayInventoryItemAggregateBoolExpCount
+}
+
+input MyMutationEbayInventoryItemAggregateBoolExpCount {
+  arguments: [MyMutationEbayInventoryItemSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationEbayInventoryItemBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationShopifyProductBoolExp {
+  _and: [MyMutationShopifyProductBoolExp!]
+  _not: MyMutationShopifyProductBoolExp
+  _or: [MyMutationShopifyProductBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  amazon_product_id: MyMutationStringComparisonExp
+  body_html: MyMutationStringComparisonExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  handle: MyMutationStringComparisonExp
+  id: MyMutationIntComparisonExp
+  product_id: MyMutationStringComparisonExp
+  product_type: MyMutationStringComparisonExp
+  published_at: MyMutationDateComparisonExp
+  published_scope: MyMutationStringComparisonExp
+  shopify_listing_id: MyMutationStringComparisonExp
+  shopify_product_variants: MyMutationShopifyProductVariantBoolExp
+  shopify_product_variants_aggregate: MyMutationShopifyProductVariantAggregateBoolExp
+  title: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  user: MyMutationUserBoolExp
+  user_id: MyMutationStringComparisonExp
+  vendor: MyMutationStringComparisonExp
+}
+
+input MyMutationDateComparisonExp {
+  _eq: date
+  _gt: date
+  _gte: date
+  _in: [date!]
+  _is_null: Boolean
+  _lt: date
+  _lte: date
+  _neq: date
+  _nin: [date!]
+}
+
+input MyMutationShopifyProductVariantBoolExp {
+  _and: [MyMutationShopifyProductVariantBoolExp!]
+  _not: MyMutationShopifyProductVariantBoolExp
+  _or: [MyMutationShopifyProductVariantBoolExp!]
+  barcode: MyMutationStringComparisonExp
+  compare_at_price: MyMutationStringComparisonExp
+  created_at: MyMutationDateComparisonExp
+  fulfillment_service: MyMutationStringComparisonExp
+  id: MyMutationIntComparisonExp
+  inventory_management: MyMutationStringComparisonExp
+  inventory_policy: MyMutationStringComparisonExp
+  position: MyMutationStringComparisonExp
+  product_id: MyMutationStringComparisonExp
+  shopify_listing_variant_id: MyMutationStringComparisonExp
+  shopify_product: MyMutationShopifyProductBoolExp
+  shopify_product_variant_price_history: MyMutationShopifyProductVariantPriceHistoryBoolExp
+  shopify_product_variant_quantity_history: MyMutationShopifyProductVariantQuantityHistoryBoolExp
+  sku: MyMutationStringComparisonExp
+  taxable: MyMutationBooleanComparisonExp
+  title: MyMutationStringComparisonExp
+  updated_at: MyMutationDateComparisonExp
+  variant_id: MyMutationStringComparisonExp
+}
+
+input MyMutationShopifyProductVariantPriceHistoryBoolExp {
+  _and: [MyMutationShopifyProductVariantPriceHistoryBoolExp!]
+  _not: MyMutationShopifyProductVariantPriceHistoryBoolExp
+  _or: [MyMutationShopifyProductVariantPriceHistoryBoolExp!]
+  created_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  price_change: MyMutationIntComparisonExp
+  product_id: MyMutationStringComparisonExp
+  shopify_product_variant: MyMutationShopifyProductVariantBoolExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  variant_id: MyMutationStringComparisonExp
+}
+
+input MyMutationShopifyProductVariantQuantityHistoryBoolExp {
+  _and: [MyMutationShopifyProductVariantQuantityHistoryBoolExp!]
+  _not: MyMutationShopifyProductVariantQuantityHistoryBoolExp
+  _or: [MyMutationShopifyProductVariantQuantityHistoryBoolExp!]
+  created_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  product_id: MyMutationStringComparisonExp
+  quantity_change: MyMutationIntComparisonExp
+  shopify_product_variant: MyMutationShopifyProductVariantBoolExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  variant_id: MyMutationStringComparisonExp
+}
+
+input MyMutationShopifyProductVariantAggregateBoolExp {
+  bool_and: MyMutationShopifyProductVariantAggregateBoolExpBoolAnd
+  bool_or: MyMutationShopifyProductVariantAggregateBoolExpBoolOr
+  count: MyMutationShopifyProductVariantAggregateBoolExpCount
+}
+
+input MyMutationShopifyProductVariantAggregateBoolExpBoolAnd {
+  arguments: MyMutationShopifyProductVariantSelectColumnShopifyProductVariantAggregateBoolExpBoolAndArgumentsColumns!
+  distinct: Boolean
+  filter: MyMutationShopifyProductVariantBoolExp
+  predicate: MyMutationBooleanComparisonExp!
+}
+
+input MyMutationShopifyProductVariantAggregateBoolExpBoolOr {
+  arguments: MyMutationShopifyProductVariantSelectColumnShopifyProductVariantAggregateBoolExpBoolOrArgumentsColumns!
+  distinct: Boolean
+  filter: MyMutationShopifyProductVariantBoolExp
+  predicate: MyMutationBooleanComparisonExp!
+}
+
+input MyMutationShopifyProductVariantAggregateBoolExpCount {
+  arguments: [MyMutationShopifyProductVariantSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationShopifyProductVariantBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationShopifyProductAggregateBoolExp {
+  count: MyMutationShopifyProductAggregateBoolExpCount
+}
+
+input MyMutationShopifyProductAggregateBoolExpCount {
+  arguments: [MyMutationShopifyProductSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationShopifyProductBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationUserEbayAssociationBoolExp {
+  _and: [MyMutationUserEbayAssociationBoolExp!]
+  _not: MyMutationUserEbayAssociationBoolExp
+  _or: [MyMutationUserEbayAssociationBoolExp!]
+  access_token: MyMutationStringComparisonExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  user: MyMutationUserBoolExp
+  user_id: MyMutationStringComparisonExp
+}
+
+input MyMutationUserShopifyAssociationBoolExp {
+  _and: [MyMutationUserShopifyAssociationBoolExp!]
+  _not: MyMutationUserShopifyAssociationBoolExp
+  _or: [MyMutationUserShopifyAssociationBoolExp!]
+  access_token: MyMutationStringComparisonExp
+  created_at: MyMutationTimestamptzComparisonExp
+  deleted_at: MyMutationTimestamptzComparisonExp
+  domain: MyMutationStringComparisonExp
+  id: MyMutationIntComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+  user: MyMutationUserBoolExp
+  user_id: MyMutationStringComparisonExp
+}
+
+input MyMutationEbayProductFeeBoolExp {
+  _and: [MyMutationEbayProductFeeBoolExp!]
+  _not: MyMutationEbayProductFeeBoolExp
+  _or: [MyMutationEbayProductFeeBoolExp!]
+  amazon_product: MyMutationAmazonProductBoolExp
+  amazon_product_id: MyMutationStringComparisonExp
+  created_at: MyMutationTimestamptzComparisonExp
+  id: MyMutationIntComparisonExp
+  listing_fee: MyMutationStringComparisonExp
+  updated_at: MyMutationTimestamptzComparisonExp
+}
+
+input MyMutationEbayProductFeeAggregateBoolExp {
+  count: MyMutationEbayProductFeeAggregateBoolExpCount
+}
+
+input MyMutationEbayProductFeeAggregateBoolExpCount {
+  arguments: [MyMutationEbayProductFeeSelectColumn!]
+  distinct: Boolean
+  filter: MyMutationEbayProductFeeBoolExp
+  predicate: MyMutationIntComparisonExp!
+}
+
+input MyMutationAmazonProductBrandOnConflict {
+  constraint: MyMutationAmazonProductBrandConstraint!
+  update_columns: [MyMutationAmazonProductBrandUpdateColumn!]!
+  where: MyMutationAmazonProductBrandBoolExp
+}
+
+input MyMutationAmazonProductDescriptionArrRelInsertInput {
+  data: [MyMutationAmazonProductDescriptionInsertInput!]!
+  on_conflict: MyMutationAmazonProductDescriptionOnConflict
+}
+
+input MyMutationAmazonProductDescriptionInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  content: String
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  marketplace_id: String
+  product_id: String
+  updated_at: timestamptz
+}
+
+input MyMutationAmazonProductDescriptionOnConflict {
+  constraint: MyMutationAmazonProductDescriptionConstraint!
+  update_columns: [MyMutationAmazonProductDescriptionUpdateColumn!]!
+  where: MyMutationAmazonProductDescriptionBoolExp
+}
+
+input MyMutationAmazonProductFeatureArrRelInsertInput {
+  data: [MyMutationAmazonProductFeatureInsertInput!]!
+  on_conflict: MyMutationAmazonProductFeatureOnConflict
+}
+
+input MyMutationAmazonProductFeatureInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  content: String
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  marketplace_id: String
+  product_id: String
+  updated_at: timestamptz
+}
+
+input MyMutationAmazonProductFeatureOnConflict {
+  constraint: MyMutationAmazonProductFeatureConstraint!
+  update_columns: [MyMutationAmazonProductFeatureUpdateColumn!]!
+  where: MyMutationAmazonProductFeatureBoolExp
+}
+
+input MyMutationAmazonProductIdentifierArrRelInsertInput {
+  data: [MyMutationAmazonProductIdentifierInsertInput!]!
+  on_conflict: MyMutationAmazonProductIdentifierOnConflict
+}
+
+input MyMutationAmazonProductIdentifierInsertInput {
+  EAN: String
+  UPC: String
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  marketplace_id: String
+  product_id: String
+  updated_at: timestamptz
+}
+
+input MyMutationAmazonProductIdentifierOnConflict {
+  constraint: MyMutationAmazonProductIdentifierConstraint!
+  update_columns: [MyMutationAmazonProductIdentifierUpdateColumn!]!
+  where: MyMutationAmazonProductIdentifierBoolExp
+}
+
+input MyMutationAmazonProductImageArrRelInsertInput {
+  data: [MyMutationAmazonProductImageInsertInput!]!
+  on_conflict: MyMutationAmazonProductImageOnConflict
+}
+
+input MyMutationAmazonProductImageInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  height: String
+  id: Int
+  marketplace_id: String
+  product_id: String
+  updated_at: timestamptz
+  url: String
+  variant: String
+  width: String
+}
+
+input MyMutationAmazonProductImageOnConflict {
+  constraint: MyMutationAmazonProductImageConstraint!
+  update_columns: [MyMutationAmazonProductImageUpdateColumn!]!
+  where: MyMutationAmazonProductImageBoolExp
+}
+
+input MyMutationAmazonProductItemDimensionArrRelInsertInput {
+  data: [MyMutationAmazonProductItemDimensionInsertInput!]!
+  on_conflict: MyMutationAmazonProductItemDimensionOnConflict
+}
+
+input MyMutationAmazonProductItemDimensionInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  height: String
+  height_unit: String
+  id: Int
+  length: String
+  length_unit: String
+  marketplace_id: String
+  product_id: String
+  updated_at: timestamptz
+  weight: String
+  weight_unit: String
+  width: String
+  width_unit: String
+}
+
+input MyMutationAmazonProductItemDimensionOnConflict {
+  constraint: MyMutationAmazonProductItemDimensionConstraint!
+  update_columns: [MyMutationAmazonProductItemDimensionUpdateColumn!]!
+  where: MyMutationAmazonProductItemDimensionBoolExp
+}
+
+input MyMutationAmazonProductKeywordArrRelInsertInput {
+  data: [MyMutationAmazonProductKeywordInsertInput!]!
+  on_conflict: MyMutationAmazonProductKeywordOnConflict
+}
+
+input MyMutationAmazonProductKeywordInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  marketplace_id: String
+  name: String
+  product_id: String
+  updated_at: timestamptz
+}
+
+input MyMutationAmazonProductKeywordOnConflict {
+  constraint: MyMutationAmazonProductKeywordConstraint!
+  update_columns: [MyMutationAmazonProductKeywordUpdateColumn!]!
+  where: MyMutationAmazonProductKeywordBoolExp
+}
+
+input MyMutationAmazonProductManufacturerArrRelInsertInput {
+  data: [MyMutationAmazonProductManufacturerInsertInput!]!
+  on_conflict: MyMutationAmazonProductManufacturerOnConflict
+}
+
+input MyMutationAmazonProductManufacturerInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  marketplace_id: String
+  name: String
+  product_id: String
+  updated_at: timestamptz
+}
+
+input MyMutationAmazonProductManufacturerOnConflict {
+  constraint: MyMutationAmazonProductManufacturerConstraint!
+  update_columns: [MyMutationAmazonProductManufacturerUpdateColumn!]!
+  where: MyMutationAmazonProductManufacturerBoolExp
+}
+
+input MyMutationAmazonProductPackageDimensionArrRelInsertInput {
+  data: [MyMutationAmazonProductPackageDimensionInsertInput!]!
+  on_conflict: MyMutationAmazonProductPackageDimensionOnConflict
+}
+
+input MyMutationAmazonProductPackageDimensionInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  height: String
+  height_unit: String
+  id: Int
+  length: String
+  length_unit: String
+  marketplace_id: String
+  product_id: String
+  updated_at: timestamptz
+  weight: String
+  weight_unit: String
+  width: String
+  width_unit: String
+}
+
+input MyMutationAmazonProductPackageDimensionOnConflict {
+  constraint: MyMutationAmazonProductPackageDimensionConstraint!
+  update_columns: [MyMutationAmazonProductPackageDimensionUpdateColumn!]!
+  where: MyMutationAmazonProductPackageDimensionBoolExp
+}
+
+input MyMutationAmazonProductPriceObjRelInsertInput {
+  data: MyMutationAmazonProductPriceInsertInput!
+}
+
+input MyMutationAmazonProductPriceInsertInput {
+  current_price: String
+  product_id: String
+}
+
+input MyMutationAmazonProductPriceHistoryObjRelInsertInput {
+  data: MyMutationAmazonProductPriceHistoryInsertInput!
+  on_conflict: MyMutationAmazonProductPriceHistoryOnConflict
+}
+
+input MyMutationAmazonProductPriceHistoryInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  id: Int
+  price_change: String
+  product_id: String
+  updated_at: timestamptz
+}
+
+input MyMutationAmazonProductPriceHistoryOnConflict {
+  constraint: MyMutationAmazonProductPriceHistoryConstraint!
+  update_columns: [MyMutationAmazonProductPriceHistoryUpdateColumn!]!
+  where: MyMutationAmazonProductPriceHistoryBoolExp
+}
+
+input MyMutationAmazonProductQuantityObjRelInsertInput {
+  data: MyMutationAmazonProductQuantityInsertInput!
+}
+
+input MyMutationAmazonProductQuantityInsertInput {
+  current_quantity: bigint
+  product_id: String
+}
+
+input MyMutationAmazonProductQuantityHistoryObjRelInsertInput {
+  data: MyMutationAmazonProductQuantityHistoryInsertInput!
+  on_conflict: MyMutationAmazonProductQuantityHistoryOnConflict
+}
+
+input MyMutationAmazonProductQuantityHistoryInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  id: Int
+  product_id: String
+  quantity_change: Int
+  updated_at: timestamptz
+}
+
+input MyMutationAmazonProductQuantityHistoryOnConflict {
+  constraint: MyMutationAmazonProductQuantityHistoryConstraint!
+  update_columns: [MyMutationAmazonProductQuantityHistoryUpdateColumn!]!
+  where: MyMutationAmazonProductQuantityHistoryBoolExp
+}
+
+input MyMutationAmazonProductSummaryArrRelInsertInput {
+  data: [MyMutationAmazonProductSummaryInsertInput!]!
+  on_conflict: MyMutationAmazonProductSummaryOnConflict
+}
+
+input MyMutationAmazonProductSummaryInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  item_classification: String
+  item_name: String
+  marketplace_id: String
+  model_number: String
+  package_quantity: String
+  product_id: String
+  size: String
+  style: String
+  updated_at: timestamptz
+  website_display_group: String
+  website_display_group_name: String
+}
+
+input MyMutationAmazonProductSummaryOnConflict {
+  constraint: MyMutationAmazonProductSummaryConstraint!
+  update_columns: [MyMutationAmazonProductSummaryUpdateColumn!]!
+  where: MyMutationAmazonProductSummaryBoolExp
+}
+
+input MyMutationAmazonProductTypeArrRelInsertInput {
+  data: [MyMutationAmazonProductTypeInsertInput!]!
+  on_conflict: MyMutationAmazonProductTypeOnConflict
+}
+
+input MyMutationAmazonProductTypeInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  marketplace_id: String
+  name: String
+  product_id: String
+  updated_at: timestamptz
+}
+
+input MyMutationAmazonProductTypeOnConflict {
+  constraint: MyMutationAmazonProductTypeConstraint!
+  update_columns: [MyMutationAmazonProductTypeUpdateColumn!]!
+  where: MyMutationAmazonProductTypeBoolExp
+}
+
+input MyMutationAmazonReportHistoryObjRelInsertInput {
+  data: MyMutationAmazonReportHistoryInsertInput!
+  on_conflict: MyMutationAmazonReportHistoryOnConflict
+}
+
+input MyMutationAmazonReportHistoryInsertInput {
+  amazon_products: MyMutationAmazonProductArrRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  notification_id: String
+  report_document_id: String
+  report_id: String
+  report_type: String
+  selling_partner_id: String
+  subscription_id: String
+  task_id: String
+  updated_at: timestamptz
+  url: String
+  user_amazon_association: MyMutationUserAmazonAssociationObjRelInsertInput
+  user_id: String
+}
+
+input MyMutationAmazonProductArrRelInsertInput {
+  data: [MyMutationAmazonProductInsertInput!]!
+  on_conflict: MyMutationAmazonProductOnConflict
+}
+
+input MyMutationUserAmazonAssociationObjRelInsertInput {
+  data: MyMutationUserAmazonAssociationInsertInput!
+  on_conflict: MyMutationUserAmazonAssociationOnConflict
+}
+
+input MyMutationUserAmazonAssociationInsertInput {
+  access_token: String
+  amazon_report_histories: MyMutationAmazonReportHistoryArrRelInsertInput
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  refresh_token: String
+  selling_partner_id: String
+  updated_at: timestamptz
+  user: MyMutationUserObjRelInsertInput
+  user_id: String
+}
+
+input MyMutationAmazonReportHistoryArrRelInsertInput {
+  data: [MyMutationAmazonReportHistoryInsertInput!]!
+  on_conflict: MyMutationAmazonReportHistoryOnConflict
+}
+
+input MyMutationAmazonReportHistoryOnConflict {
+  constraint: MyMutationAmazonReportHistoryConstraint!
+  update_columns: [MyMutationAmazonReportHistoryUpdateColumn!]!
+  where: MyMutationAmazonReportHistoryBoolExp
+}
+
+input MyMutationUserObjRelInsertInput {
+  data: MyMutationUserInsertInput!
+  on_conflict: MyMutationUserOnConflict
+}
+
+input MyMutationUserInsertInput {
+  amazon_products: MyMutationAmazonProductArrRelInsertInput
+  created_at: timestamptz
+  data: json
+  deleted_at: timestamptz
+  ebay_inventory_items: MyMutationEbayInventoryItemArrRelInsertInput
+  ebay_inventory_offers: MyMutationEbayInventoryOfferArrRelInsertInput
+  email: String
+  id: Int
+  provider: String
+  shopify_products: MyMutationShopifyProductArrRelInsertInput
+  sub: String
+  updated_at: timestamptz
+  user_amazon_association: MyMutationUserAmazonAssociationObjRelInsertInput
+  user_ebay_association: MyMutationUserEbayAssociationObjRelInsertInput
+  user_id: String
+  user_shopify_association: MyMutationUserShopifyAssociationObjRelInsertInput
+}
+
+input MyMutationEbayInventoryItemArrRelInsertInput {
+  data: [MyMutationEbayInventoryItemInsertInput!]!
+  on_conflict: MyMutationEbayInventoryItemOnConflict
+}
+
+input MyMutationEbayInventoryItemInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  amazon_product_id: String
+  condition: String
+  condition_description: String
+  created_at: timestamptz
+  deleted_at: timestamptz
+  description: String
+  ebay_inventory_offers: MyMutationEbayInventoryOfferArrRelInsertInput
+  id: Int
+  quantity: String
+  sku: String
+  title: String
+  updated_at: timestamptz
+  user: MyMutationUserObjRelInsertInput
+  user_id: String
+}
+
+input MyMutationEbayInventoryOfferArrRelInsertInput {
+  data: [MyMutationEbayInventoryOfferInsertInput!]!
+  on_conflict: MyMutationEbayInventoryOfferOnConflict
+}
+
+input MyMutationEbayInventoryOfferInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  amazon_product_id: String
+  available_quantity: String
+  created_at: timestamptz
+  deleted_at: timestamptz
+  ebay_inventory_item: MyMutationEbayInventoryItemObjRelInsertInput
+  format: String
+  fulfillment_policy_id: String
+  id: Int
+  inventory_item_id: Int
+  listing_description: String
+  merchant_location_key: String
+  offer_id: String
+  payment_policy_id: String
+  primary_category_id: String
+  published: Boolean
+  quantity_limit_per_buyer: String
+  return_policy_id: String
+  sku: String
+  updated_at: timestamptz
+  user: MyMutationUserObjRelInsertInput
+  user_id: String
+}
+
+input MyMutationEbayInventoryItemObjRelInsertInput {
+  data: MyMutationEbayInventoryItemInsertInput!
+  on_conflict: MyMutationEbayInventoryItemOnConflict
+}
+
+input MyMutationEbayInventoryItemOnConflict {
+  constraint: MyMutationEbayInventoryItemConstraint!
+  update_columns: [MyMutationEbayInventoryItemUpdateColumn!]!
+  where: MyMutationEbayInventoryItemBoolExp
+}
+
+input MyMutationEbayInventoryOfferOnConflict {
+  constraint: MyMutationEbayInventoryOfferConstraint!
+  update_columns: [MyMutationEbayInventoryOfferUpdateColumn!]!
+  where: MyMutationEbayInventoryOfferBoolExp
+}
+
+input MyMutationShopifyProductArrRelInsertInput {
+  data: [MyMutationShopifyProductInsertInput!]!
+  on_conflict: MyMutationShopifyProductOnConflict
+}
+
+input MyMutationShopifyProductInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  amazon_product_id: String
+  body_html: String
+  created_at: timestamptz
+  deleted_at: timestamptz
+  handle: String
+  id: Int
+  product_id: String
+  product_type: String
+  published_at: date
+  published_scope: String
+  shopify_listing_id: String
+  shopify_product_variants: MyMutationShopifyProductVariantArrRelInsertInput
+  title: String
+  updated_at: timestamptz
+  user: MyMutationUserObjRelInsertInput
+  user_id: String
+  vendor: String
+}
+
+input MyMutationShopifyProductVariantArrRelInsertInput {
+  data: [MyMutationShopifyProductVariantInsertInput!]!
+  on_conflict: MyMutationShopifyProductVariantOnConflict
+}
+
+input MyMutationShopifyProductVariantInsertInput {
+  barcode: String
+  compare_at_price: String
+  created_at: date
+  fulfillment_service: String
+  id: Int
+  inventory_management: String
+  inventory_policy: String
+  position: String
+  product_id: String
+  shopify_listing_variant_id: String
+  shopify_product: MyMutationShopifyProductObjRelInsertInput
+  shopify_product_variant_price_history: MyMutationShopifyProductVariantPriceHistoryObjRelInsertInput
+  shopify_product_variant_quantity_history: MyMutationShopifyProductVariantQuantityHistoryObjRelInsertInput
+  sku: String
+  taxable: Boolean
+  title: String
+  updated_at: date
+  variant_id: String
+}
+
+input MyMutationShopifyProductObjRelInsertInput {
+  data: MyMutationShopifyProductInsertInput!
+  on_conflict: MyMutationShopifyProductOnConflict
+}
+
+input MyMutationShopifyProductOnConflict {
+  constraint: MyMutationShopifyProductConstraint!
+  update_columns: [MyMutationShopifyProductUpdateColumn!]!
+  where: MyMutationShopifyProductBoolExp
+}
+
+input MyMutationShopifyProductVariantPriceHistoryObjRelInsertInput {
+  data: MyMutationShopifyProductVariantPriceHistoryInsertInput!
+  on_conflict: MyMutationShopifyProductVariantPriceHistoryOnConflict
+}
+
+input MyMutationShopifyProductVariantPriceHistoryInsertInput {
+  created_at: timestamptz
+  id: Int
+  price_change: Int
+  product_id: String
+  shopify_product_variant: MyMutationShopifyProductVariantObjRelInsertInput
+  updated_at: timestamptz
+  variant_id: String
+}
+
+input MyMutationShopifyProductVariantObjRelInsertInput {
+  data: MyMutationShopifyProductVariantInsertInput!
+  on_conflict: MyMutationShopifyProductVariantOnConflict
+}
+
+input MyMutationShopifyProductVariantOnConflict {
+  constraint: MyMutationShopifyProductVariantConstraint!
+  update_columns: [MyMutationShopifyProductVariantUpdateColumn!]!
+  where: MyMutationShopifyProductVariantBoolExp
+}
+
+input MyMutationShopifyProductVariantPriceHistoryOnConflict {
+  constraint: MyMutationShopifyProductVariantPriceHistoryConstraint!
+  update_columns: [MyMutationShopifyProductVariantPriceHistoryUpdateColumn!]!
+  where: MyMutationShopifyProductVariantPriceHistoryBoolExp
+}
+
+input MyMutationShopifyProductVariantQuantityHistoryObjRelInsertInput {
+  data: MyMutationShopifyProductVariantQuantityHistoryInsertInput!
+  on_conflict: MyMutationShopifyProductVariantQuantityHistoryOnConflict
+}
+
+input MyMutationShopifyProductVariantQuantityHistoryInsertInput {
+  created_at: timestamptz
+  id: Int
+  product_id: String
+  quantity_change: Int
+  shopify_product_variant: MyMutationShopifyProductVariantObjRelInsertInput
+  updated_at: timestamptz
+  variant_id: String
+}
+
+input MyMutationShopifyProductVariantQuantityHistoryOnConflict {
+  constraint: MyMutationShopifyProductVariantQuantityHistoryConstraint!
+  update_columns: [MyMutationShopifyProductVariantQuantityHistoryUpdateColumn!]!
+  where: MyMutationShopifyProductVariantQuantityHistoryBoolExp
+}
+
+input MyMutationUserEbayAssociationObjRelInsertInput {
+  data: MyMutationUserEbayAssociationInsertInput!
+  on_conflict: MyMutationUserEbayAssociationOnConflict
+}
+
+input MyMutationUserEbayAssociationInsertInput {
+  access_token: String
+  created_at: timestamptz
+  deleted_at: timestamptz
+  id: Int
+  updated_at: timestamptz
+  user: MyMutationUserObjRelInsertInput
+  user_id: String
+}
+
+input MyMutationUserEbayAssociationOnConflict {
+  constraint: MyMutationUserEbayAssociationConstraint!
+  update_columns: [MyMutationUserEbayAssociationUpdateColumn!]!
+  where: MyMutationUserEbayAssociationBoolExp
+}
+
+input MyMutationUserShopifyAssociationObjRelInsertInput {
+  data: MyMutationUserShopifyAssociationInsertInput!
+  on_conflict: MyMutationUserShopifyAssociationOnConflict
+}
+
+input MyMutationUserShopifyAssociationInsertInput {
+  access_token: String
+  created_at: timestamptz
+  deleted_at: timestamptz
+  domain: String
+  id: Int
+  updated_at: timestamptz
+  user: MyMutationUserObjRelInsertInput
+  user_id: String
+}
+
+input MyMutationUserShopifyAssociationOnConflict {
+  constraint: MyMutationUserShopifyAssociationConstraint!
+  update_columns: [MyMutationUserShopifyAssociationUpdateColumn!]!
+  where: MyMutationUserShopifyAssociationBoolExp
+}
+
+input MyMutationUserOnConflict {
+  constraint: MyMutationUserConstraint!
+  update_columns: [MyMutationUserUpdateColumn!]!
+  where: MyMutationUserBoolExp
+}
+
+input MyMutationUserAmazonAssociationOnConflict {
+  constraint: MyMutationUserAmazonAssociationConstraint!
+  update_columns: [MyMutationUserAmazonAssociationUpdateColumn!]!
+  where: MyMutationUserAmazonAssociationBoolExp
+}
+
+input MyMutationEbayProductFeeArrRelInsertInput {
+  data: [MyMutationEbayProductFeeInsertInput!]!
+  on_conflict: MyMutationEbayProductFeeOnConflict
+}
+
+input MyMutationEbayProductFeeInsertInput {
+  amazon_product: MyMutationAmazonProductObjRelInsertInput
+  amazon_product_id: String
+  created_at: timestamptz
+  id: Int
+  listing_fee: String
+  updated_at: timestamptz
+}
+
+input MyMutationEbayProductFeeOnConflict {
+  constraint: MyMutationEbayProductFeeConstraint!
+  update_columns: [MyMutationEbayProductFeeUpdateColumn!]!
+  where: MyMutationEbayProductFeeBoolExp
+}
+
+type MyMutationOutput {
+  affected_rows: Int!
+}
+

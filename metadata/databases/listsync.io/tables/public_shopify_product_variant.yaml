@@ -1,0 +1,62 @@
+table:
+  name: shopify_product_variant
+  schema: public
+object_relationships:
+  - name: shopify_product
+    using:
+      foreign_key_constraint_on: product_id
+  - name: shopify_product_variant_price_history
+    using:
+      manual_configuration:
+        column_mapping:
+          product_id: product_id
+          variant_id: variant_id
+        insertion_order: null
+        remote_table:
+          name: shopify_product_variant_price_history
+          schema: public
+  - name: shopify_product_variant_quantity_history
+    using:
+      manual_configuration:
+        column_mapping:
+          product_id: product_id
+          variant_id: variant_id
+        insertion_order: null
+        remote_table:
+          name: shopify_product_variant_quantity_history
+          schema: public
+  - name: store
+    using:
+      foreign_key_constraint_on: store_id
+  - name: tenant
+    using:
+      foreign_key_constraint_on: tenant_id
+array_relationships:
+  - name: shopifyProductVariantPriceHistoriesByVariantId
+    using:
+      foreign_key_constraint_on:
+        column: variant_id
+        table:
+          name: shopify_product_variant_price_history
+          schema: public
+  - name: shopifyProductVariantQuantityHistoriesByVariantId
+    using:
+      foreign_key_constraint_on:
+        column: variant_id
+        table:
+          name: shopify_product_variant_quantity_history
+          schema: public
+  - name: shopify_product_variant_price_histories
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: shopify_product_variant_price_history
+          schema: public
+  - name: shopify_product_variant_quantity_histories
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: shopify_product_variant_quantity_history
+          schema: public

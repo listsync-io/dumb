@@ -1,0 +1,263 @@
+table:
+  name: amazon_product
+  schema: public
+object_relationships:
+  - name: amazon_product_price
+    using:
+      manual_configuration:
+        column_mapping:
+          product_id: product_id
+        insertion_order: null
+        remote_table:
+          name: amazon_product_price
+          schema: public
+  - name: amazon_product_price_history
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_price_history
+          schema: public
+  - name: amazon_product_quantity
+    using:
+      manual_configuration:
+        column_mapping:
+          product_id: product_id
+        insertion_order: null
+        remote_table:
+          name: amazon_product_quantity
+          schema: public
+  - name: amazon_product_quantity_history
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_quantity_history
+          schema: public
+  - name: amazon_report_history
+    using:
+      foreign_key_constraint_on: source_report_id
+  - name: store
+    using:
+      foreign_key_constraint_on: store_id
+  - name: tenant
+    using:
+      foreign_key_constraint_on: tenant_id
+array_relationships:
+  - name: amazon_product_brands
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_brand
+          schema: public
+  - name: amazon_product_descriptions
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_description
+          schema: public
+  - name: amazon_product_features
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_feature
+          schema: public
+  - name: amazon_product_identifiers
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_identifier
+          schema: public
+  - name: amazon_product_images
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_image
+          schema: public
+  - name: amazon_product_item_dimensions
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_item_dimension
+          schema: public
+  - name: amazon_product_keywords
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_keyword
+          schema: public
+  - name: amazon_product_manufacturers
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_manufacturer
+          schema: public
+  - name: amazon_product_package_dimensions
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_package_dimension
+          schema: public
+  - name: amazon_product_price_histories
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_price_history
+          schema: public
+  - name: amazon_product_quantity_histories
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_quantity_history
+          schema: public
+  - name: amazon_product_summaries
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_summary
+          schema: public
+  - name: amazon_product_types
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table:
+          name: amazon_product_type
+          schema: public
+  - name: ebay_inventory_items
+    using:
+      foreign_key_constraint_on:
+        column: amazon_product_id
+        table:
+          name: ebay_inventory_item
+          schema: public
+  - name: ebay_inventory_offers
+    using:
+      foreign_key_constraint_on:
+        column: amazon_product_id
+        table:
+          name: ebay_inventory_offer
+          schema: public
+  - name: ebay_product_fees
+    using:
+      foreign_key_constraint_on:
+        column: amazon_product_id
+        table:
+          name: ebay_product_fee
+          schema: public
+  - name: shopify_products
+    using:
+      foreign_key_constraint_on:
+        column: amazon_product_id
+        table:
+          name: shopify_product
+          schema: public
+insert_permissions:
+  - role: cemretenant
+    permission:
+      check:
+        tenant_id:
+          _eq: X-Hasura-Tenant-Id
+      columns:
+        - asin
+        - fulfillment_channel
+        - item_name
+        - listing_id
+        - product_id
+        - seller_sku
+        - source_report_id
+        - status
+        - open_date
+        - id
+        - item_condition
+        - store_id
+        - tenant_id
+        - item_description
+        - created_at
+        - deleted_at
+        - updated_at
+    comment: ""
+select_permissions:
+  - role: cemretenant
+    permission:
+      columns:
+        - asin
+        - fulfillment_channel
+        - item_name
+        - listing_id
+        - product_id
+        - seller_sku
+        - source_report_id
+        - status
+        - open_date
+        - id
+        - item_condition
+        - store_id
+        - tenant_id
+        - item_description
+        - created_at
+        - deleted_at
+        - updated_at
+      filter:
+        tenant_id:
+          _eq: X-Hasura-Tenant-Id
+    comment: ""
+update_permissions:
+  - role: cemretenant
+    permission:
+      columns:
+        - asin
+        - fulfillment_channel
+        - item_name
+        - listing_id
+        - product_id
+        - seller_sku
+        - source_report_id
+        - status
+        - open_date
+        - id
+        - item_condition
+        - store_id
+        - tenant_id
+        - item_description
+        - created_at
+        - deleted_at
+        - updated_at
+      filter:
+        tenant_id:
+          _eq: X-Hasura-Tenant-Id
+      check: null
+    comment: ""
+delete_permissions:
+  - role: cemretenant
+    permission:
+      filter:
+        tenant_id:
+          _eq: X-Hasura-Tenant-Id
+    comment: ""
+event_triggers:
+  - name: amazon-inventory-import
+    definition:
+      delete:
+        columns: '*'
+      enable_manual: false
+      insert:
+        columns: '*'
+      update:
+        columns: '*'
+    retry_conf:
+      interval_sec: 10
+      num_retries: 0
+      timeout_sec: 60
+    webhook: http://host.docker.internal:3001/amazon/inventory-import-change
